@@ -1,6 +1,8 @@
 # functions.js
 _A functions file to help with writing scripts for PreSonus Studio One 4.5+_
 
+#[functions.js](https://github.com/ExpressMix/studioone_functions/blob/master/functions.js)
+
 **_Use:  include_file('functions.js')_**
 
 <HR>
