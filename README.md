@@ -56,7 +56,7 @@ Sets a channel to a hex color, # char irrelevant
 
 ### MIXER CHANNELS 
 
-   **getChannels** (_selected [bool]_)</br>
+   &nbsp;&nbsp;&nbsp;&nbsp **getChannels** (_selected [bool]_)</br>
     Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
 
 ```
@@ -74,23 +74,23 @@ var channels = getChannels();           // all channels
 }
 ```
 
-   **getChannelsByName** (name _[string]_, caseMatching _[bool]_)</br>
+     &nbsp;&nbsp;&nbsp;&nbsp **getChannelsByName** (name _[string]_, caseMatching _[bool]_)</br>
     Returns an array of mixer channels where the channel name contains the string.</br> 
     Matching: 0 or none = no case sensitivity, 1 = case    sensitive matching
 
-   **getFader** (channel [object])</br>
+    &nbsp;&nbsp;&nbsp;&nbsp**getFader** (channel [object])</br>
     Returns a fader level in dB.  Example: getFader(channel[i]);
 
-   **setFader** (channel _[object]_, level _[integer])</br>
+    &nbsp;&nbsp;&nbsp;&nbsp**setFader** (channel _[object]_, level _[integer])</br>
     Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
 
-   **masterFader (level _[integer])**</br>
+    &nbsp;&nbsp;&nbsp;&nbsp**masterFader (level _[integer])**</br>
     Sets the master bus level in dB. </br>Example: masterFader( -10.5);
 
-   **centerPans ()**</br>
+    &nbsp;&nbsp;&nbsp;&nbsp**centerPans ()**</br>
     Centers pans on all selected channel(s)
 
-   **setChannelColor** (channel _[object]_, color _[hex]_)</br>
+    &nbsp;&nbsp;&nbsp;&nbsp**setChannelColor** (channel _[object]_, color _[hex]_)</br>
     Sets a channel to a hex color, # char irrelevant
 
 <HR>
