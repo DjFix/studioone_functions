@@ -69,6 +69,7 @@ var channels = getChannels();  // all channels
         }
     }
 }
+```
 
 - **getChannelsByName(string, [integer])**</br>
 Returns an array of arrange tracks containing the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
