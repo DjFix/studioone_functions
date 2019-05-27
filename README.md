@@ -18,7 +18,7 @@ Write to console, no need to format to string beforehand.
 ### TRACKS 
 
 - **getTracks(bool)**</br>
-Returns an array of arrange tracks
+Returns an array of arrange tracks</br>
 Argument None or 0 = all tracks, 1 = selected tracks
 
 ```
@@ -35,11 +35,12 @@ var tracks = getTracks(1)  // selected tracks
 ```
 
 - **getTracksByName(string, [integer])**</br>
-Returns an array of arrange tracks containing the string
+Returns an array of arrange tracks containing the string</br>
 Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
 - **renameTracks(string, string)**</br>
-Replace parts of all track names:  Case sensitive matching (search string, replacment string)
+Replace parts of all track name</br>
+Case sensitive matching (search string, replacment string)
 
 - **selectTrack(track)**</br>
 Used to optionally select tracks when iterating if necessary
@@ -52,21 +53,21 @@ Sets a channel to a hex color, # char irrelevant
 ### MIXER CHANNELS 
 
 - **getChannels(bool)**</br>
-Returns an array of mixer channels (not input or sub outs)
+Returns an array of mixer channels (not input or sub outs)</br>
 Argument: None or 0 = all Channels, 1 = seleced channels
 
 - **getChannelsByName(string, [integer])**</br>
-Returns an array of arrange tracks containing the string
+Returns an array of arrange tracks containing the string</br>
 Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
 - **getFader(channel)**</br>
 Retiurns a fader level in dB.  Example: getFader(channel[i]);
 
 - **setFader(channel, integeR)**</br>
-Sets a fader level in dB.  Example: setFader(channel[i], -10);
+Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
 
 - **masterFader(integer)**</br>
-Sets the master bus level in dB.  Example: masterFader( -10.5);
+Sets the master bus level in dB. </br>Example: masterFader( -10.5);
 
 - **centerPans()**</br>
 Centers pans on all selected channel(s)
