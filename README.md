@@ -20,7 +20,7 @@ Write to console, no need to format to string beforehand.
 
 ### TRACKS 
 
-- **getTracks(bool)**</br>
+- **getTracks(_[bool]_)**</br>
 Returns an array of arrange tracks</br>
 Argument: None or 0 = all tracks, 1 = selected tracks
 
@@ -52,7 +52,7 @@ Sets a channel to a hex color, # char irrelevant
 
 ### MIXER CHANNELS 
 
-- **getChannels(bool)**</br>
+- **getChannels(_[bool]_)**</br>
 Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
 
 
