@@ -61,7 +61,7 @@ Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 
 
 
 ```
-var channels = getChannels();  // all channels
+var channels = getChannels();           // all channels
 {
     for (i = 0; i < channels.length; i++)
     {
