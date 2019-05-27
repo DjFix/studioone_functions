@@ -3,7 +3,7 @@ _An obfuscated functions file to include for PreSonus Studio One 4.5 + scripts_
 
 **_Use:  include_file('functions.js')_**
 
-## MESSAGING  -----------------------
+### MESSAGING  -----------------------
 
 - **alert**(value)
 Common alert box, no need to format to string beforehand.
