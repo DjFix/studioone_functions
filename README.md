@@ -1,12 +1,12 @@
 # studioone_functions
 functions include file for PreSonus Studio One 4.5 +
 
-# Use:  include_file('functions.js')
+** Use:  include_file('functions.js')**
 Messaging  -----------------------
-# alert(value)
+**alert**(value)
 Common alert box, no need to format to string beforehand.
 
-# print(value)
+**print**(value)
 Write to console, no need to format to string beforehand.
 
 # Tracks -------------------------
