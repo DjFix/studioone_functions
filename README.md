@@ -24,7 +24,7 @@ Write to console, string formatting is performed in the function.
 
 ### TRACKS 
 
-- **getTracks (_selected [bool]_)**</br>
+- **getTracks** (_selected [bool]_)</br>
 Returns an array of arrange tracks</br>
 Argument: None or 0 = all tracks, 1 = selected tracks
 
@@ -40,16 +40,16 @@ var tracks = getTracks(1)               // selected tracks
 }
 ```
 
-- **getTracksByName (string, [integer])**</br>
+- **getTracksByName** (string, [integer])</br>
 Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
-- **renameTracks (match _[string]_, replace _[string]_)**</br>
+- **renameTracks** (match _[string]_, replace _[string]_)</br>
 Replace parts of all track name. Case sensitive matching (search string, replacment string)
 
-- **selectTrack (track _[object]_)**</br>
+- **selectTrack** (track _[object]_)</br>
 Used to optionally select tracks when iterating if necessary
 
-- **setTrackColor (channel _[object]_, color _[hex])**</br>
+- **setTrackColor** (channel _[object]_, color _[hex])</br>
 Sets a channel to a hex color, # char irrelevant
 
 <HR>
