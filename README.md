@@ -40,7 +40,7 @@ var tracks = getTracks(1)               // selected tracks
 }
 ```
 
-- **getTracksByName** (string, [integer])</br>
+- **getTracksByName** (string, _[integer]_)</br>
 Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
 - **renameTracks** (match _[string]_, replace _[string]_)</br>
@@ -49,7 +49,7 @@ Replace parts of all track name. Case sensitive matching (search string, replacm
 - **selectTrack** (track _[object]_)</br>
 Used to optionally select tracks when iterating if necessary
 
-- **setTrackColor** (channel _[object]_, color _[hex])</br>
+- **setTrackColor** (channel _[object]_, color _[hex]_)</br>
 Sets a channel to a hex color, # char irrelevant
 
 <HR>
