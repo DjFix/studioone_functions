@@ -3,6 +3,8 @@ _An obfuscated functions file to include for PreSonus Studio One 4.5 + scripts_
 
 **_Use:  include_file('functions.js')_**
 
+<HR>
+
 ### MESSAGING
 
 - **alert**(value)</br>
@@ -32,6 +34,7 @@ Used to optionally select tracks when iterating if necessary
 - **setTrackColor(channel, color)**</br>
 Sets a channel to a hex color, # char irrelevant
 
+<HR>
 
 ### MIXER CHANNELS 
 
@@ -57,6 +60,8 @@ Centers pans on all selected channel(s)
 
 - **setChannelColor(channel, color)**</br>
 Sets a channel to a hex color, # char irrelevant
+
+<HR>
 
 ### External Instruments 
 
