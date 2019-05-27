@@ -1,5 +1,5 @@
 # functions.js
-_A functions file to help with writing scripts for PreSonus Studio One 4.5+.  The file is obfuscated and cannot be edited._
+_Functions to help with developing scripts for PreSonus Studio One 4.5+.  The file is obfuscated and cannot be edited._
 
 <HR>
     
