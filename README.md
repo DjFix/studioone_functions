@@ -14,17 +14,17 @@ Copy it to your script project folder(s) and add **_include_file('functions.js')
 
 ### MESSAGING
 
-- **alert**(value)</br>
+- **alert** (value)</br>
 Common alert box, string formatting is performed in the function.
 
-- **print**(value)</br>
+- **print** (value)</br>
 Write to console, string formatting is performed in the function.
 
 <HR>
 
 ### TRACKS 
 
-- **getTracks(_selected [bool]_)**</br>
+- **getTracks (_selected [bool]_)**</br>
 Returns an array of arrange tracks</br>
 Argument: None or 0 = all tracks, 1 = selected tracks
 
@@ -40,23 +40,23 @@ var tracks = getTracks(1)               // selected tracks
 }
 ```
 
-- **getTracksByName(string, [integer])**</br>
+- **getTracksByName (string, [integer])**</br>
 Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
-- **renameTracks(match _[string]_, replace _[string]_)**</br>
+- **renameTracks (match _[string]_, replace _[string]_)**</br>
 Replace parts of all track name. Case sensitive matching (search string, replacment string)
 
-- **selectTrack(track _[object]_)**</br>
+- **selectTrack (track _[object]_)**</br>
 Used to optionally select tracks when iterating if necessary
 
-- **setTrackColor(channel _[object]_, color _[hex])**</br>
+- **setTrackColor (channel _[object]_, color _[hex])**</br>
 Sets a channel to a hex color, # char irrelevant
 
 <HR>
 
 ### MIXER CHANNELS 
 
-- **getChannels(_Selected [bool]_)**</br>
+- **getChannels (_Selected [bool]_)**</br>
 Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
 
 ```
@@ -74,27 +74,27 @@ var channels = getChannels();           // all channels
 }
 ```
 
-- **getChannelsByName(name _[string]_, caseMatching _[bool]_)**</br>
+- **getChannelsByName (name _[string]_, caseMatching _[bool]_)**</br>
 Returns an array of mixer channels where the channel name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
 - **getFader(channel [object])**</br>
 Retiurns a fader level in dB.  Example: getFader(channel[i]);
 
-- **setFader(channel _[object]_, level _[integer])**</br>
+- **setFader (channel _[object]_, level _[integer])**</br>
 Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
 
-- **masterFader(level _[integer])**</br>
+- **masterFader (level _[integer])**</br>
 Sets the master bus level in dB. </br>Example: masterFader( -10.5);
 
-- **centerPans()**</br>
+- **centerPans ()**</br>
 Centers pans on all selected channel(s)
 
-- **setChannelColor(channel _[object]_, color _[hex]_)**</br>
+- **setChannelColor (channel _[object]_, color _[hex]_)**</br>
 Sets a channel to a hex color, # char irrelevant
 
 <HR>
 
 ### External Instruments 
 
-- **setProgram(bank _[integer], program _[integer]_)**</br>
+- **setProgram (bank _[integer], program _[integer]_)**</br>
 Set bank and program for an external instrument (bank, program)
