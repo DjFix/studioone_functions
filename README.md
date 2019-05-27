@@ -41,7 +41,7 @@ var tracks = getTracks(1)               // selected tracks
 ```
 
 - **getTracksByName(string, [integer])**</br>
-Returns an array of arrange tracks containing the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
+Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
 - **renameTracks(string, string)**</br>
 Replace parts of all track name. Case sensitive matching (search string, replacment string)
@@ -59,7 +59,6 @@ Sets a channel to a hex color, # char irrelevant
 - **getChannels(_[bool]_)**</br>
 Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
 
-
 ```
 var channels = getChannels();           // all channels
 {
@@ -76,7 +75,7 @@ var channels = getChannels();           // all channels
 ```
 
 - **getChannelsByName(string, [integer])**</br>
-Returns an array of arrange tracks containing the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
+Returns an array of mixer channels where the channel name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
 - **getFader(channel)**</br>
 Retiurns a fader level in dB.  Example: getFader(channel[i]);
