@@ -3,7 +3,7 @@ An obfuscated functions file to includee for PreSonus Studio One 4.5 +
 
 **_Use:  include_file('functions.js')_**
 
-**Messaging  -----------------------**
+**MESSAGING  -----------------------**
 
 - **alert**(value)
 Common alert box, no need to format to string beforehand.
@@ -11,7 +11,7 @@ Common alert box, no need to format to string beforehand.
 - **print**(value)
 Write to console, no need to format to string beforehand.
 
-Tracks -------------------------
+**TRACKS ---------------------------**
 
 - **getTracks(bool)**
 Returns an array of arrange tracks
@@ -31,32 +31,32 @@ Used to optionally select tracks when iterating if necessary
 Sets a channel to a hex color, # char irrelevant
 
 
-**Mixer Channels -------------**
+**MIXER CHANNELS -------------------**
 
-**getChannels(bool)**
+- **getChannels(bool)**
 Returns an array of mixer channels (not input or sub outs)
 Argument: None or 0 = all Channels, 1 = seleced channels
 
-getChannelsByName(string, [integer])
+- **getChannelsByName(string, [integer])**
 Returns an array of arrange tracks containing the string
 Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
-getFader(channel)
+- **getFader(channel)**
 Retiurns a fader level in dB.  Example: getFader(channel[i]);
 
-setFader(channel, intege
+- **setFader(channel, integeR)**
 Sets a fader level in dB.  Example: setFader(channel[i], -10);
 
-masterFader(integer)
+- **masterFader(integer)**
 Sets the master bus level in dB.  Example: masterFader( -10.5);
 
-centerPans()
+- **centerPans()**
 Centers pans on all selected channel(s)
 
-setChannelColor(channel, color)
+- **setChannelColor(channel, color)**
 Sets a channel to a hex color, # char irrelevant
 
 **External Instruments -----------------**
 
-setProgram(integer, integer)
+- **setProgram(integer, integer)**
 Set bank and program for an external instrument (bank, program)
