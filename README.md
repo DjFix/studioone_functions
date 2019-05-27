@@ -5,7 +5,7 @@ Some basic functions to help with developing scripts for PreSonus Studio One 4.5
     
 **How To Use:**</br>
 
-_Right click the link and **Save As...** to download:_
+Right click the link and **Save As...** to download:
 [functions.js](https://raw.githubusercontent.com/expressmix/studioone_functions/master/functions.js) </br>
 Copy it to your script project folder(s) and add **_include_file('functions.js')_** to the top of your JS code file.
 
