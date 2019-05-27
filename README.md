@@ -22,10 +22,9 @@ Write to console, no need to format to string beforehand.
 
 - **getTracks(bool)**</br>
 Returns an array of arrange tracks</br>
-Argument None or 0 = all tracks, 1 = selected tracks
+Argument: None or 0 = all tracks, 1 = selected tracks
 
 ```
-// example
 var tracks = getTracks(1)  // selected tracks
 {
     for (i = 0; i < tracks.length; i++)
