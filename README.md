@@ -5,7 +5,7 @@ _An obfuscated functions file to include for PreSonus Studio One 4.5 + scripts_
 
 ### MESSAGING  -----------------------
 
-- **alert**(value)
+- **alert**(value)</br>
 Common alert box, no need to format to string beforehand.
 
 - **print**(value)
