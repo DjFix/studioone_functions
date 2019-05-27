@@ -1,7 +1,7 @@
 # studioone_functions
 functions include file for PreSonus Studio One 4.5 +
 
-** Use:  include_file('functions.js')**
+**Use:  include_file('functions.js')**
 Messaging  -----------------------
 **alert**(value)
 Common alert box, no need to format to string beforehand.
@@ -9,7 +9,7 @@ Common alert box, no need to format to string beforehand.
 **print**(value)
 Write to console, no need to format to string beforehand.
 
-# Tracks -------------------------
+Tracks -------------------------
 getTracks(bool)
 Returns an array of arrange tracks
 Argument None or 0 = all tracks, 1 = selected tracks
@@ -28,7 +28,7 @@ setTrackColor(channel, color)
 Sets a channel to a hex color, # char irrelevant
 
 
-# Mixer Channels -------------
+Mixer Channels -------------
 
 getChannels(bool)
 Returns an array of mixer channels (not input or sub outs)
@@ -53,7 +53,7 @@ Centers pans on all selected channel(s)
 setChannelColor(channel, color)
 Sets a channel to a hex color, # char irrelevant
 
-# External Instruments -----------------
+External Instruments -----------------
 
 	setProgram(integer, integer)
 	Set bank and program for an external instrument (bank, program)
