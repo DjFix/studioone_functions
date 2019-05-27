@@ -56,8 +56,8 @@ Sets a channel to a hex color, # char irrelevant
 
 ### MIXER CHANNELS 
 
-   **getChannels** (_selected [bool]_)**</br>
-Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
+   **getChannels** (_selected [bool]_)</br>
+    Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
 
 ```
 var channels = getChannels();           // all channels
