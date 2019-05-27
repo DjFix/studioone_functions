@@ -21,8 +21,8 @@ Write to console, no need to format to string beforehand.
 Returns an array of arrange tracks
 Argument None or 0 = all tracks, 1 = selected tracks
 
-```
-// sample
+>```
+// example
 var tracks = getTracks(1)
 {
     for (i = 0; i < tracks.length; i++)
