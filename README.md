@@ -46,7 +46,7 @@ Returns an array of arrange tracks where the track name contains the string. Mat
 - **renameTracks(match _[string]_, replace _[string]_)**</br>
 Replace parts of all track name. Case sensitive matching (search string, replacment string)
 
-- **selectTrack(track _[object])**</br>
+- **selectTrack(track _[object]_)**</br>
 Used to optionally select tracks when iterating if necessary
 
 - **setTrackColor(channel _[object]_, color _[hex])**</br>
