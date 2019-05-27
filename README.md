@@ -15,11 +15,11 @@ Copy it to your script project folder(s) and add **_include_file('functions.js')
 ### MESSAGING
 
 - **alert** (value)</br>
-Common alert box, string formatting is performed in the function.
+Common alert box, string formatting is performed in the function
 
 - **print** (value)</br>
-Write to console, string formatting is performed in the function.</br>
-Outputs to the Studio One message window.
+Write to console, string formatting is performed in the function</br>
+Outputs to the Studio One message window
 
 <HR>
 
