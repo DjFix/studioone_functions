@@ -3,7 +3,7 @@ _An obfuscated functions file to include for PreSonus Studio One 4.5 + scripts_
 
 **_Use:  include_file('functions.js')_**
 
-### MESSAGING  -----------------------
+### MESSAGING
 
 - **alert**(value)</br>
 Common alert box, no need to format to string beforehand.
@@ -11,7 +11,7 @@ Common alert box, no need to format to string beforehand.
 - **print**(value)</br>
 Write to console, no need to format to string beforehand.
 
-### TRACKS ---------------------------
+### TRACKS 
 
 - **getTracks(bool)**</br>
 Returns an array of arrange tracks
@@ -31,7 +31,7 @@ Used to optionally select tracks when iterating if necessary
 Sets a channel to a hex color, # char irrelevant
 
 
-### MIXER CHANNELS -------------------
+>### MIXER CHANNELS 
 
 - **getChannels(bool)**</br>
 Returns an array of mixer channels (not input or sub outs)
@@ -56,7 +56,7 @@ Centers pans on all selected channel(s)
 - **setChannelColor(channel, color)**</br>
 Sets a channel to a hex color, # char irrelevant
 
-### External Instruments -----------------
+### External Instruments 
 
 - **setProgram(integer, integer)**</br>
 Set bank and program for an external instrument (bank, program)
