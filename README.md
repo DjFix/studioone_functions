@@ -11,7 +11,7 @@ Common alert box, no need to format to string beforehand.
 - **print**(value)
 Write to console, no need to format to string beforehand.
 
-## TRACKS ---------------------------
+### TRACKS ---------------------------
 
 - **getTracks(bool)**
 Returns an array of arrange tracks
@@ -31,7 +31,7 @@ Used to optionally select tracks when iterating if necessary
 Sets a channel to a hex color, # char irrelevant
 
 
-## MIXER CHANNELS -------------------
+### MIXER CHANNELS -------------------
 
 - **getChannels(bool)**
 Returns an array of mixer channels (not input or sub outs)
@@ -56,7 +56,7 @@ Centers pans on all selected channel(s)
 - **setChannelColor(channel, color)**
 Sets a channel to a hex color, # char irrelevant
 
-## External Instruments -----------------
+### External Instruments -----------------
 
 - **setProgram(integer, integer)**
 Set bank and program for an external instrument (bank, program)
