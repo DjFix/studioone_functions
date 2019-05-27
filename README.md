@@ -74,27 +74,27 @@ var channels = getChannels();           // all channels
 }
 ```
 
-- **getChannelsByName(name [string], caseMatching [bool])**</br>
+- **getChannelsByName(name _[string]_, caseMatching _[bool]_)**</br>
 Returns an array of mixer channels where the channel name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
 - **getFader(channel [object])**</br>
 Retiurns a fader level in dB.  Example: getFader(channel[i]);
 
-- **setFader(channel [oobjec], integer)**</br>
+- **setFader(channel _[object]_, level _[integer])**</br>
 Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
 
-- **masterFader(integer)**</br>
+- **masterFader(level _[integer])**</br>
 Sets the master bus level in dB. </br>Example: masterFader( -10.5);
 
 - **centerPans()**</br>
 Centers pans on all selected channel(s)
 
-- **setChannelColor(channel, color)**</br>
+- **setChannelColor(channel _[object]_, color _[hex]_)**</br>
 Sets a channel to a hex color, # char irrelevant
 
 <HR>
 
 ### External Instruments 
 
-- **setProgram(integer, integer)**</br>
+- **setProgram(bank _[integer], program _[integer]_)**</br>
 Set bank and program for an external instrument (bank, program)
