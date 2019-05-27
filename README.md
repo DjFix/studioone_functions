@@ -3,7 +3,7 @@ _A functions file to help with writing scripts for PreSonus Studio One 4.5+.  Th
 
 <HR>
     
-**How To Use:** Copy it to the same folder as your script files and _include_file('functions.js')_** in your JS file.
+**How To Use:** Copy it to the same folder as your script files and add **_include_file('functions.js')_** to the top of your JS code file.
 
 _Right click the link and Save As:_ 
 [functions.js](https://raw.githubusercontent.com/expressmix/studioone_functions/master/functions.js)
