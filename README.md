@@ -82,11 +82,11 @@ Matching: 0 or none = no case sensitivity, 1 = case    sensitive matching
 - **getFader** (channel _[object]_)</br>
 Returns a fader level in dB.  Example: getFader(channel[i]);
 
-- **setFader** (channel _[object]_, level _[integer])</br>
-Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
+- **setFader** (channel _[object]_, level _[integer]_)</br>
+Sets a fader to a specific dB value.  
 
-- **masterFader** (level _[integer]_)**</br>
-Sets the master bus level in dB. </br>Example: masterFader( -10.5);
+- **setMasterFader** (level _[integer]_)**</br>
+Sets the master bus fader to a specific dB value. </br>Example: setMasterFader( -10.5);
 
 - **centerPans ()**</br>
 Centers pans on all selected channel(s)
