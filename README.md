@@ -11,6 +11,8 @@ Common alert box, no need to format to string beforehand.
 - **print**(value)</br>
 Write to console, no need to format to string beforehand.
 
+<HR>
+
 ### TRACKS 
 
 - **getTracks(bool)**</br>
@@ -31,7 +33,7 @@ Used to optionally select tracks when iterating if necessary
 Sets a channel to a hex color, # char irrelevant
 
 
->### MIXER CHANNELS 
+### MIXER CHANNELS 
 
 - **getChannels(bool)**</br>
 Returns an array of mixer channels (not input or sub outs)
