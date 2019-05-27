@@ -1,7 +1,7 @@
 # functions.js
 _A functions file to help with writing scripts for PreSonus Studio One 4.5+_
 
-Right click the link and Save Target As...: 
+_Right click the link and Save As:_ 
 [functions.js](https://raw.githubusercontent.com/expressmix/studioone_functions/master/functions.js)
 
 **_Use:  include_file('functions.js')_**
