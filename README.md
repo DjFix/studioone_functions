@@ -3,7 +3,7 @@ An obfuscated functions file to includee for PreSonus Studio One 4.5 +
 
 **_Use:  include_file('functions.js')_**
 
-Messaging  -----------------------
+**Messaging  -----------------------**
 
 - **alert**(value)
 Common alert box, no need to format to string beforehand.
@@ -13,21 +13,21 @@ Write to console, no need to format to string beforehand.
 
 Tracks -------------------------
 
-**getTracks(bool)**
+- **getTracks(bool)**
 Returns an array of arrange tracks
 Argument None or 0 = all tracks, 1 = selected tracks
 
-**getTracksByName(string, [integer])**
+ -**getTracksByName(string, [integer])**
 Returns an array of arrange tracks containing the string
 Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
-**renameTracks(string, string)**
+- **renameTracks(string, string)**
 Replace parts of all track names:  Case sensitive matching (search string, replacment string)
 
-**selectTrack(track)**
+- **selectTrack(track)**
 Used to optionally select tracks when iterating if necessary
 
-**setTrackColor(channel, color)**
+- **setTrackColor(channel, color)**
 Sets a channel to a hex color, # char irrelevant
 
 
