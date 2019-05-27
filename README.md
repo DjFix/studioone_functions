@@ -29,18 +29,6 @@ Outputs to the Studio One message window
 Returns an array of arrange tracks</br>
 Argument: None or 0 = all tracks, 1 = selected tracks
 
-```
-var tracks = getTracks(1)               // selected tracks
-{
-    for (i = 0; i < tracks.length; i++)
-    {
-       var track = tracks[i];
-       setTrackColor(track,"#32c382")   // green
-       print(track.name);               // print to console
-    }
-}
-```
-
 - **getTracksByName** (string, _[integer]_)</br>
 Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
@@ -65,21 +53,6 @@ Sets a channel to a hex color, # char irrelevant
 
 -  **getChannels** (_selected [bool]_)</br>
 Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = selected channels
-
-```
-var channels = getChannels();           // all channels
-{
-    for (i = 0; i < channels.length; i++)
-    {
-        var channel = channels[i];
-        setFader(channel,-6.0)          // set to -6dB
-        if (channel.pan != undefined)   // i.e, VCA's don't have pans for examplename
-        {
-            print(channel.pan);         // print to console
-        }
-    }
-}
-```
 
 - **getChannelsByName** (name _[string]_, caseMatching _[bool]_)</br>
 Returns an array of mixer channels where the channel name contains the string.</br> 
