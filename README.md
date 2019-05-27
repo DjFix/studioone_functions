@@ -77,7 +77,7 @@ Returns an array of arrange tracks containing the string. Matching: 0 or none = 
 - **getFader(channel)**</br>
 Retiurns a fader level in dB.  Example: getFader(channel[i]);
 
-- **setFader(channel, integeR)**</br>
+- **setFader(channel, integer)**</br>
 Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
 
 - **masterFader(integer)**</br>
