@@ -80,19 +80,6 @@ Returns an array of arrange tracks containing the string. Matching: 0 or none = 
 
 - **getFader(channel)**</br>
 Retiurns a fader level in dB.  Example: getFader(channel[i]);
-'''
-// set all faders to -3
-var channels = getChannels();  // all channels
-{
-    var level = -3;
-    var goingUp = true;
-    for (i = 0; i < channels.length; i++)
-    {
-        var channel = channels[i];
-        setFader(channel, level)
-    }
-}
-'''
 
 - **setFader(channel, integer)**</br>
 Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
