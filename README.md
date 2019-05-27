@@ -15,10 +15,10 @@ Copy it to your script project folder(s) and add **_include_file('functions.js')
 ### MESSAGING
 
 - **alert**(value)</br>
-Common alert box, no need to format to string beforehand.
+Common alert box, string formatting is performed in the function.
 
 - **print**(value)</br>
-Write to console, no need to format to string beforehand.
+Write to console, string formatting is performed in the function.
 
 <HR>
 
