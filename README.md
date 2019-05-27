@@ -19,7 +19,7 @@ Common alert box, string formatting is performed in the function.
 
 - **print** (value)</br>
 Write to console, string formatting is performed in the function.</br>
-Outputs to the Studio One message windows.
+Outputs to the Studio One message window.
 
 <HR>
 
