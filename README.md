@@ -1,4 +1,4 @@
-# studioone_functions
+# functions.js
 _An obfuscated functions file to include for PreSonus Studio One 4.5 + scripts_
 
 **_Use:  include_file('functions.js')_**
