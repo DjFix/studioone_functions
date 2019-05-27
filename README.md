@@ -23,7 +23,7 @@ Argument None or 0 = all tracks, 1 = selected tracks
 
 ```
 // example
-var tracks = getTracks(1)
+var tracks = getTracks(1)  // selected tracks
 {
     for (i = 0; i < tracks.length; i++)
     {
