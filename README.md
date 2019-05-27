@@ -88,11 +88,11 @@ Sets a fader to a specific dB value.
 - **setMasterFader** (level _[integer]_)**</br>
 Sets the master bus fader to a specific dB value. </br>Example: setMasterFader( -10.5);
 
-- **centerPans ()**</br>
-Centers pans on all selected channel(s)
-
 - **setChannelColor** (channel _[object]_, color _[hex]_)</br>
  Sets a channel to a hex color, # char irrelevant
+ 
+- **centerPans ()**</br>
+Centers pans on all selected channel(s)
 
 <HR>
 
