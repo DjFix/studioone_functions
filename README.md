@@ -21,6 +21,19 @@ Write to console, no need to format to string beforehand.
 Returns an array of arrange tracks
 Argument None or 0 = all tracks, 1 = selected tracks
 
+```
+// sample
+var tracks = getTracks(1)
+{
+    for (i = 0; i < tracks.length; i++)
+    {
+       var track = tracks[i];
+       setTrackColor(tracks[i],"#32c382") // green
+       print(track.name);  // print to console
+    }
+}
+```
+
 - **getTracksByName(string, [integer])**</br>
 Returns an array of arrange tracks containing the string
 Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
