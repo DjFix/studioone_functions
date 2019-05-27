@@ -24,7 +24,7 @@ Write to console, string formatting is performed in the function.
 
 ### TRACKS 
 
-- **getTracks(_[bool]_)**</br>
+- **getTracks(_selected [bool]_)**</br>
 Returns an array of arrange tracks</br>
 Argument: None or 0 = all tracks, 1 = selected tracks
 
@@ -43,20 +43,20 @@ var tracks = getTracks(1)               // selected tracks
 - **getTracksByName(string, [integer])**</br>
 Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
-- **renameTracks(string, string)**</br>
+- **renameTracks(match _[string]_, replace _[string]_)**</br>
 Replace parts of all track name. Case sensitive matching (search string, replacment string)
 
-- **selectTrack(track)**</br>
+- **selectTrack(track _[object])**</br>
 Used to optionally select tracks when iterating if necessary
 
-- **setTrackColor(channel, color)**</br>
+- **setTrackColor(channel _[object]_, color _[hex])**</br>
 Sets a channel to a hex color, # char irrelevant
 
 <HR>
 
 ### MIXER CHANNELS 
 
-- **getChannels(_[bool]_)**</br>
+- **getChannels(_Selected [bool]_)**</br>
 Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
 
 ```
@@ -66,7 +66,7 @@ var channels = getChannels();           // all channels
     {
         var channel = channels[i];
         setFader(channel,-6.0)          // set to -6dB
-        if (channel.pan != undefined)   // i.e, VCA's don't have pans for example
+        if (channel.pan != undefined)   // i.e, VCA's don't have pans for examplename
         {
             print(channel.pan);         // print to console
         }
@@ -74,13 +74,13 @@ var channels = getChannels();           // all channels
 }
 ```
 
-- **getChannelsByName(string, [integer])**</br>
+- **getChannelsByName(name [string], caseMatching [bool])**</br>
 Returns an array of mixer channels where the channel name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
-- **getFader(channel)**</br>
+- **getFader(channel [object])**</br>
 Retiurns a fader level in dB.  Example: getFader(channel[i]);
 
-- **setFader(channel, integer)**</br>
+- **setFader(channel [oobjec], integer)**</br>
 Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
 
 - **masterFader(integer)**</br>
