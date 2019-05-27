@@ -12,11 +12,12 @@ Messaging  -----------------------
 	Write to console, no need to format to string beforehand.
 
 Tracks -------------------------
-	getTracks(bool)
+
+	**getTracks(bool)**
 	Returns an array of arrange tracks
 	Argument None or 0 = all tracks, 1 = selected tracks
 
-	getTracksByName(string, [integer])
+	**getTracksByName(string, [integer])**
 	Returns an array of arrange tracks containing the string
 	Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
