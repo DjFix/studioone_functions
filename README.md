@@ -43,7 +43,7 @@ var tracks = getTracks(1)               // selected tracks
 - **getTracksByName** (string, _[integer]_)</br>
 Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
-- **renameTracks** (match _[string]_, replace _[string]_)</br>
+- **renameTracks** (find _[string]_, replace _[string]_)</br>
 Replace parts of all track name. Case sensitive matching (search string, replacment string)
 
 - **selectTrack** (track _[object]_)</br>
