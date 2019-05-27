@@ -56,8 +56,8 @@ Sets a channel to a hex color, # char irrelevant
 
 ### MIXER CHANNELS 
 
-   &nbsp;&nbsp;&nbsp;&nbsp **getChannels** (_selected [bool]_)</br>
-    Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
+&nbsp;&nbsp;&nbsp; **getChannels** (_selected [bool]_)</br>
+&nbsp;&nbsp;&nbsp; Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
 
 ```
 var channels = getChannels();           // all channels
@@ -75,23 +75,23 @@ var channels = getChannels();           // all channels
 ```
 
 &nbsp;&nbsp;&nbsp; **getChannelsByName** (name _[string]_, caseMatching _[bool]_)</br>
-    Returns an array of mixer channels where the channel name contains the string.</br> 
-    Matching: 0 or none = no case sensitivity, 1 = case    sensitive matching
+&nbsp;&nbsp;&nbsp; Returns an array of mixer channels where the channel name contains the string.</br> 
+&nbsp;&nbsp;&nbsp; Matching: 0 or none = no case sensitivity, 1 = case    sensitive matching
 
 &nbsp;&nbsp;&nbsp;**getFader** (channel [object])</br>
-    Returns a fader level in dB.  Example: getFader(channel[i]);
+&nbsp;&nbsp;&nbsp;    Returns a fader level in dB.  Example: getFader(channel[i]);
 
 &nbsp;&nbsp;&nbsp;**setFader** (channel _[object]_, level _[integer])</br>
-    Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
+&nbsp;&nbsp;&nbsp; Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
 
 &nbsp;&nbsp;&nbsp;**masterFader (level _[integer])**</br>
-    Sets the master bus level in dB. </br>Example: masterFader( -10.5);
+&nbsp;&nbsp;&nbsp; Sets the master bus level in dB. </br>Example: masterFader( -10.5);
 
 &nbsp;&nbsp;&nbsp;**centerPans ()**</br>
-    Centers pans on all selected channel(s)
+&nbsp;&nbsp;&nbsp; Centers pans on all selected channel(s)
 
 &nbsp;&nbsp;&nbsp;**setChannelColor** (channel _[object]_, color _[hex]_)</br>
-    Sets a channel to a hex color, # char irrelevant
+&nbsp;&nbsp;&nbsp; Sets a channel to a hex color, # char irrelevant
 
 <HR>
 
