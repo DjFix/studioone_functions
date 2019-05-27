@@ -18,7 +18,8 @@ Copy it to your script project folder(s) and add **_include_file('functions.js')
 Common alert box, string formatting is performed in the function.
 
 - **print** (value)</br>
-Write to console, string formatting is performed in the function.
+Write to console, string formatting is performed in the function.</br>
+Outputs to the Studio One message windows.
 
 <HR>
 
