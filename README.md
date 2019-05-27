@@ -53,12 +53,18 @@ Use this to optionally select tracks when iterating when necessary
 - **setTrackColor** (channel _[object]_, color _[hex]_)</br>
 Sets a channel to a hex color, # char irrelevant
 
+
+- **muteTrack** (track _[object]_)</br>
+
+- **soloTrack** (track _[object]_)</br>
+
+
 <HR>
 
 ### MIXER CHANNELS 
 
-&nbsp;&nbsp;&nbsp; **getChannels** (_selected [bool]_)</br>
-&nbsp;&nbsp;&nbsp; Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
+-  **getChannels** (_selected [bool]_)</br>
+Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = selected channels
 
 ```
 var channels = getChannels();           // all channels
@@ -88,11 +94,11 @@ Sets a fader to a specific dB value.
 - **setMasterFader** (level _[integer]_)**</br>
 Sets the master bus fader to a specific dB value. </br>Example: setMasterFader( -10.5);
 
-- **centerPans ()**</br>
-Centers pans on all selected channel(s)
-
 - **setChannelColor** (channel _[object]_, color _[hex]_)</br>
  Sets a channel to a hex color, # char irrelevant
+ 
+- **centerPans ()**</br>
+Centers pans on all selected channel(s)
 
 <HR>
 
