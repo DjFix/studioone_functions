@@ -78,13 +78,13 @@ var channels = getChannels();           // all channels
 Returns an array of mixer channels where the channel name contains the string.</br> 
 Matching: 0 or none = no case sensitivity, 1 = case    sensitive matching
 
-- **getFader** (channel [object])</br>
+- **getFader** (channel _[object]_)</br>
 Returns a fader level in dB.  Example: getFader(channel[i]);
 
 - **setFader** (channel _[object]_, level _[integer])</br>
 Sets a fader level in dB.  </br>Example: setFader(channel[i], -10);
 
-- **masterFader (level _[integer])**</br>
+- **masterFader** (level _[integer]_)**</br>
 Sets the master bus level in dB. </br>Example: masterFader( -10.5);
 
 - **centerPans ()**</br>
