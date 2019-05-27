@@ -98,4 +98,4 @@ Centers pans on all selected channel(s)
 ### External Instruments 
 
    - **setProgram** (bank _[integer]_, program _[integer]_)</br>
-    Set bank and program for an external instrument (bank, program)
+    Set bank and program for an external instrument 
