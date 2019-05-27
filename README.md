@@ -30,7 +30,7 @@ var tracks = getTracks(1)  // selected tracks
     for (i = 0; i < tracks.length; i++)
     {
        var track = tracks[i];
-       setTrackColor(tracks[i],"#32c382") // green
+       setTrackColor(track,"#32c382") // green
        print(track.name);  // print to console
     }
 }
