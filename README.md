@@ -55,6 +55,21 @@ Sets a channel to a hex color, # char irrelevant
 - **getChannels(bool)**</br>
 Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = seleced channels
 
+
+```
+var channels = getChannels();  // all channels
+{
+    for (i = 0; i < channels.length; i++)
+    {
+        var channel = channels[i];
+        setFader(channel,6.0) 
+        if (channel.pan != undefined)  // i.e, VCA's don't have pans for example
+        {
+            print(channel.pan);  // print to console
+        }
+    }
+}
+
 - **getChannelsByName(string, [integer])**</br>
 Returns an array of arrange tracks containing the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
