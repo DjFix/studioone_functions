@@ -47,8 +47,8 @@ Sets a channel to a hex color, # char irrelevant
 _[does not include input or sub out channels]_
 
 -  **getChannels** (_selected [bool]_)</br>
-Returns an array of mixer channelsArgument:</br>
-Argument is optionsl: None or 0 = all Channels, 1 = selected channels
+Returns an array of mixer channels</br>
+Argument is optional: None or 0 = all Channels, 1 = selected channels
 
 - **getChannelsByName** (name _[string]_, caseMatching _[bool]_)</br>
 Returns an array of mixer channels where the channel name contains the string.</br> 
