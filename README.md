@@ -43,7 +43,8 @@ Sets a channel to a hex color, # char irrelevant
 
 <HR>
 
-### CHANNELS </br>_(not input nor sub outs)_.
+### CHANNELS </br>
+_(not input nor sub out channels)_.
 
 -  **getChannels** (_selected [bool]_)</br>
 Returns an array of mixer channels  Argument: None or 0 = all Channels, 1 = selected channels
