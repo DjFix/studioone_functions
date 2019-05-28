@@ -84,6 +84,6 @@ Centers pans on all selected channel(s)
 
 ### Other Random Stuff
 
-- Mute: if (track.channel != undefined) {track.channel.mute};
-- Solo: if {track.channel != undefined) {track.channel.solo);
-- Action: Host.GUI.Commands.interpretCommand("category","action")
+- **Mute:** if (track.channel != undefined) {track.channel.mute};
+- **Solo:** if {track.channel != undefined) {track.channel.solo);
+- **Action:** Host.GUI.Commands.interpretCommand("category","action")
