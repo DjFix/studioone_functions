@@ -33,7 +33,7 @@ Argument: None or 0 = all tracks, 1 = selected tracks
 Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
 - **renameTracks** (find _[string]_, replace _[string]_)</br>
-Replace parts of all track name. Case sensitive matching (search string, replacment string)
+Replace parts of all track names. Case sensitive matching (search string, replacment string)
 
 - **selectTrack** (track _[object]_)</br>
 Use this to optionally select tracks when iterating when necessary
