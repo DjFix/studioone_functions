@@ -9,7 +9,7 @@ Right click the link and **Save As...** to download:
 [functions.js](https://raw.githubusercontent.com/expressmix/studioone_functions/master/functions.js) </br>
 Copy it to your script project folder(s) and add **_include_file('functions.js')_** to the top of your JS code file.
 
-_Note: There is error handling in the functinos but if you encounter any errors with any function please leave a comment here explaining the use so they can be trapped._
+_Note: There is error handling in the functions but if you encounter any errors with any function please leave a detailed comment here explaining the use so it can be trapped._
 
 <HR>
 
