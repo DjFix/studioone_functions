@@ -31,7 +31,8 @@ Returns an array of arrange tracks</br>
 Argument is optional: None or 0 = all tracks, 1 = selected tracks
 
 - **getTracksByName** (string, _[integer]_)</br>
-Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
+Returns an array of arrange tracks where the track name contains the string. </br>
+Optional case sensitivy matching: 0 or none = no case sensitivity, 1 = case sensitive 
 
 - **renameTracks** (find _[string]_, replace _[string]_)</br>
 Replace parts of all track names. Case sensitive matching (search string, replacment string)
@@ -60,7 +61,7 @@ Argument is optional: None or 0 = all Channels, 1 = selected channels
 
 - **getChannelsByName** (name _[string]_, caseMatching _[bool]_)</br>
 Returns an array of mixer channels where the channel name contains the string.</br> 
-Matching: 0 or none = no case sensitivity, 1 = case    sensitive matching
+Optional case sensitivy matching: 0 or none = no case sensitivity, 1 = case sensitive 
 
 
 - **getFader** (channel _[object]_)</br>
