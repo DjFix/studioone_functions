@@ -84,7 +84,7 @@ Centers pans on all selected channel(s)
 
 ### External Instruments 
 
-_You can use this function in your own custom patch manager script, to send any program and bank changes out to MIDI hardware._
+_You can use this function in your own custom patch manager script, to send program and bank changes out to MIDI hardware._
 
    - **setProgram** (bank _[integer]_, program _[integer]_)</br>
     Set bank and program for an external instrument 
