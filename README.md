@@ -79,3 +79,11 @@ Centers pans on all selected channel(s)
 
    - **setProgram** (bank _[integer]_, program _[integer]_)</br>
     Set bank and program for an external instrument 
+    
+<HR>
+
+### Other Random Stuff
+
+- Mute: if (track.channel != undefined) {track.channel.mute};
+- Solo: if {track.channel != undefined) {track.channel.solo);
+- Action: Host.GUI.Commands.interpretCommand("category","action")
