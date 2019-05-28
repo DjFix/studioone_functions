@@ -54,7 +54,7 @@ Returns an array of mixer channels where the channel name contains the string.</
 Matching: 0 or none = no case sensitivity, 1 = case    sensitive matching
 
 - **getFader** (channel _[object]_)</br>
-Returns a fader level in dB.  Example: getFader(channel[i]);
+Returns a fader level in dB. 
 
 - **setFader** (channel _[object]_, level _[integer]_)</br>
 Sets a fader to a specific dB value.  -144 to 10
