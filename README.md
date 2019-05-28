@@ -95,4 +95,4 @@ _You can use this function in your own custom patch manager script, to send any 
 
 - **Mute:** if (track.channel != undefined) {track.channel.mute = 1};
 - **Solo:** if {track.channel != undefined) {track.channel.solo = 1);
-- **Action:** Host.GUI.Commands.interpretCommand("category","action")
+- **Fire an Action:** Host.GUI.Commands.interpretCommand("category","action")
