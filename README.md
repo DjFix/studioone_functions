@@ -27,7 +27,7 @@ Outputs to the Studio One message window
 
 - **getTracks** (_selected [bool]_)</br>
 Returns an array of arrange tracks</br>
-Argument: None or 0 = all tracks, 1 = selected tracks
+Argument is optional: None or 0 = all tracks, 1 = selected tracks
 
 - **getTracksByName** (string, _[integer]_)</br>
 Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
@@ -47,11 +47,13 @@ Sets a channel to a hex color, # char irrelevant
 _[does not include input or sub out channels]_
 
 -  **getChannels** (_selected [bool]_)</br>
-Returns an array of mixer channels  Argument: None or 0 = all Channels, 1 = selected channels
+Returns an array of mixer channelsArgument:</br>
+Argument is optionsl: None or 0 = all Channels, 1 = selected channels
 
 - **getChannelsByName** (name _[string]_, caseMatching _[bool]_)</br>
 Returns an array of mixer channels where the channel name contains the string.</br> 
 Matching: 0 or none = no case sensitivity, 1 = case    sensitive matching
+
 
 - **getFader** (channel _[object]_)</br>
 Returns a fader level in dB. 
