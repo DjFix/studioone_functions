@@ -76,7 +76,7 @@ Centers pans on all selected channel(s)
     
 <HR>
 
-### Miscellaneous Code
+### Miscellaneous
 
 - **Mute:** if (track.channel != undefined) {track.channel.mute = 1};
 - **Solo:** if {track.channel != undefined) {track.channel.solo = 1);
