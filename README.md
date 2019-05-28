@@ -41,12 +41,6 @@ Use this to optionally select tracks when iterating when necessary
 - **setTrackColor** (channel _[object]_, color _[hex]_)</br>
 Sets a channel to a hex color, # char irrelevant
 
-
-- **muteTrack** (track _[object]_)</br>
-
-- **soloTrack** (track _[object]_)</br>
-
-
 <HR>
 
 ### MIXER CHANNELS 
@@ -62,7 +56,7 @@ Matching: 0 or none = no case sensitivity, 1 = case    sensitive matching
 Returns a fader level in dB.  Example: getFader(channel[i]);
 
 - **setFader** (channel _[object]_, level _[integer]_)</br>
-Sets a fader to a specific dB value.  
+Sets a fader to a specific dB value.  -144 to +10
 
 - **setMasterFader** (level _[integer]_)</br>
 Sets the master bus fader to a specific dB value. </br>Example: setMasterFader( -10.5);
