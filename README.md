@@ -27,13 +27,13 @@ Outputs to the Studio One message window
 
 - **getTracks** (_selected [bool]_)</br>
 Returns an array of arrange tracks</br>
-Argument: None or 0 = all tracks, 1 = selected tracks
+Argument is optional: None or 0 = all tracks, 1 = selected tracks
 
 - **getTracksByName** (string, _[integer]_)</br>
 Returns an array of arrange tracks where the track name contains the string. Matching: 0 or none = no case sensitivity, 1 = case sensitive matching
 
 - **renameTracks** (find _[string]_, replace _[string]_)</br>
-Replace parts of all track name. Case sensitive matching (search string, replacment string)
+Replace parts of all track names. Case sensitive matching (search string, replacment string)
 
 - **selectTrack** (track _[object]_)</br>
 Use this to optionally select tracks when iterating when necessary
@@ -41,31 +41,29 @@ Use this to optionally select tracks when iterating when necessary
 - **setTrackColor** (channel _[object]_, color _[hex]_)</br>
 Sets a channel to a hex color, # char irrelevant
 
-
-- **muteTrack** (track _[object]_)</br>
-
-- **soloTrack** (track _[object]_)</br>
-
-
 <HR>
 
-### MIXER CHANNELS 
+### CHANNELS </br>
+_[does not include input or sub out channels]_
 
 -  **getChannels** (_selected [bool]_)</br>
-Returns an array of mixer channels _(not input or sub outs)_. Argument: None or 0 = all Channels, 1 = selected channels
+Returns an array of mixer channels</br>
+Argument is optional: None or 0 = all Channels, 1 = selected channels
 
 - **getChannelsByName** (name _[string]_, caseMatching _[bool]_)</br>
 Returns an array of mixer channels where the channel name contains the string.</br> 
 Matching: 0 or none = no case sensitivity, 1 = case    sensitive matching
 
+
 - **getFader** (channel _[object]_)</br>
-Returns a fader level in dB.  Example: getFader(channel[i]);
+Returns a fader level in dB. 
 
 - **setFader** (channel _[object]_, level _[integer]_)</br>
-Sets a fader to a specific dB value.  
+Sets a fader to a specific dB value.  -144 to 10
 
 - **setMasterFader** (level _[integer]_)</br>
-Sets the master bus fader to a specific dB value. </br>Example: setMasterFader( -10.5);
+Sets the master bus fader to a specific dB value. </br>
+_Example: setMasterFader( -10.5);_
 
 - **setChannelColor** (channel _[object]_, color _[hex]_)</br>
  Sets a channel to a hex color, # char irrelevant
@@ -79,3 +77,11 @@ Centers pans on all selected channel(s)
 
    - **setProgram** (bank _[integer]_, program _[integer]_)</br>
     Set bank and program for an external instrument 
+    
+<HR>
+
+### Miscellaneous
+
+- **Mute:** if (track.channel != undefined) {track.channel.mute = 1};
+- **Solo:** if {track.channel != undefined) {track.channel.solo = 1);
+- **Action:** Host.GUI.Commands.interpretCommand("category","action")
