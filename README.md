@@ -31,7 +31,7 @@ Returns an array of arrange tracks</br>
 Argument is optional: None or 0 = all tracks, 1 = selected tracks
 
 - **getTracksByName** (string, _[integer]_)</br>
-Returns an array of arrange tracks where the track name contains the string. </br>
+Returns an array of tracks where the track name contains the string. </br>
 Optional case sensitivy matching: 0 or none = no case sensitivity, 1 = case sensitive 
 
 - **renameTracks** (find _[string]_, replace _[string]_)</br>
