@@ -43,7 +43,7 @@ Use this to optionally select tracks when iterating when necessary
 Sets a channel to a hex color, # char irrelevant
 
 - **getPan** (track _[object]_)</br>
-Get the pan value from a track's channel if any
+Returns the pan value from a track's channel if any
 
 - **setPan** (track _[object]_, value _[string]_)</br>
 Sets the pan value for a track's channel if any
