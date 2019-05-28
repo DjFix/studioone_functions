@@ -51,7 +51,7 @@ _setPan(track, 'L45')_
 <HR>
 
 ### CHANNELS </br>
-_[does not include input or sub out channels]_
+_[does not include input or sub-out channels]_
 
 -  **getChannels** (_selected [bool]_)</br>
 Returns an array of mixer channels</br>
