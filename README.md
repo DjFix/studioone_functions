@@ -44,7 +44,7 @@ Sets a channel to a hex color, # char irrelevant
 - **getPan** (track _[object]_)</br>
 Get the pan value from a track's channel if any
 
-- **setPanr** (track _[object]_, value _[string]_)</br>
+- **setPan** (track _[object]_, value _[string]_)</br>
 Sets the pan value for a track's channel if any
 _setPan(track, 'L45')_
 
