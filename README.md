@@ -64,7 +64,7 @@ Returns a fader level in dB.  Example: getFader(channel[i]);
 - **setFader** (channel _[object]_, level _[integer]_)</br>
 Sets a fader to a specific dB value.  
 
-- **setMasterFader** (level _[integer]_)**</br>
+- **setMasterFader** (level _[integer]_)</br>
 Sets the master bus fader to a specific dB value. </br>Example: setMasterFader( -10.5);
 
 - **setChannelColor** (channel _[object]_, color _[hex]_)</br>
