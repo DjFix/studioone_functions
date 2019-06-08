@@ -93,7 +93,7 @@ _You can use this function in your own custom patch manager script, to send prog
     Returns an array from a Cubase patch script (.txt) file.</br>
     _Argument is optional.  1 = print array to console.</br>_
     Array item 0 is the Instrument Name, all other array items are comma delimited as follows:</br>
-    Program Name, program number, bank number, group name
+    _Program Name, program number, bank number, group name_
     
     
 <HR>
