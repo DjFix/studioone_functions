@@ -89,7 +89,7 @@ _You can use this function in your own custom patch manager script, to send prog
    - **setProgram** (bank _[integer]_, program _[integer]_)</br>
     Set bank and program for an external instrument 
     
-   - **loadCubasePatchScript** (debug _[integer]_)</br>
+   - **loadCubasePatchFile** (debug _[integer]_)</br>
     Returns an array from a Cubase patch script (.txt) file.</br>
     _Argument is optional.  1 = print array to console.</br>_
     Array item 0 is the Instrument Name, all other array items are comma delimited as follows:</br>
