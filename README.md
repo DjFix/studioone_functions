@@ -109,7 +109,7 @@ _You can use this function in your own custom patch manager script, to send prog
 
 ### Script Package Example
 
-A basic Studio One script package consists of *(minimum)* three files as outlined shown below zipped with a .package extender.
+A Studio One script package consists of *(at minimum)* three files as outlined below, zipped with a **.package** extender.
 
 - **metainfo.xml**  
 *Meta information for the package, **Package:ID** must be unique*
