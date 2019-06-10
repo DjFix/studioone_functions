@@ -40,8 +40,8 @@ Replace parts of all track names. Case sensitive matching (search string, replac
 - **selectTrack** (track _[object]_)</br>
 Use this to optionally select tracks when iterating when necessary
 
-- **setTrackColor** (channel _[object]_, color _[hex]_)</br>
-Sets a channel to a hex color, # char irrelevant
+- **setTrackColor** (track _[object]_, color _[hex]_)</br>
+Sets a track to a hex color, # char irrelevant
 
 - **getPan** (track _[object]_)</br>
 Returns the pan value from a track's channel if any
@@ -82,7 +82,7 @@ Centers pans on all selected channel(s)
 
 <HR>
 
-### External Instruments 
+### EXTERNAL INSTRUMENTS 
 
 _You can use this function in your own custom patch manager script, to send program and bank changes out to MIDI hardware._
 
@@ -98,7 +98,7 @@ _You can use this function in your own custom patch manager script, to send prog
     
 <HR>
 
-### Miscellaneous
+### MISCELLANEOUS
 
 - **Mute:** if (track.channel != undefined) {track.channel.mute = 1};
 - **Solo:** if {track.channel != undefined) {track.channel.solo = 1);
@@ -107,42 +107,50 @@ _You can use this function in your own custom patch manager script, to send prog
 
 <HR>
 
-### Sample Code
+### SCRIPT PACKAGE EXAMPLE
 
-A basic Studio One script package consists of *(minimum)* three files as outlined shown below zipped with a .package extender.
+A Studio One script package consists of *(at minimum)* three files as outlined below, zipped with a **.package** extender.  
+*You can use this package to test various functions in functions.js.*
 
-- **metainfo.xml**  
-*Meta information for the package*
+### **metainfo.xml**  
+*Meta information for the script package.*
+
+***Package:ID** must be unique*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <MetaInformation>
-	<Attribute id="Package:ID" value="test.functions"/>
-	<Attribute id="Package:SkinFile" value="skin/"/>
-	<Attribute id="Package:TranslationFile" value="translations/"/>
-	<Attribute id="Package:Version" value="1.0.0/"/>
+    <Attribute id="Package:ID" value="test.functions"/>
+    <Attribute id="Package:SkinFile" value="skin/"/>
+    <Attribute id="Package:TranslationFile" value="translations/"/>
+    <Attribute id="Package:Version" value="1.0.0/"/>
 </MetaInformation>
 ```
 
-- **classfactory.xml**  
-*Class definitions for each action, UID's must be unique*
+### **classfactory.xml**  
+*Class definitions for each individual action.* 
+
+***ClassID's** must be unique.   
+**menuPriority** value="-1" is don't list in menu*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <ClassFactory>
-	<ScriptClass
-		classID="{80CBE1FC-3EC1-4A97-A79E-FC46990FAEE8}"
-		category="EditTask"
-		subCategory="TrackEdit"
-		name="TEST FUNCTIONS"
-		sourceFile="code.js"
-		functionName="createInstance"
-		metaClassID="{B6099740-B26D-4BC3-A471-CBAAAED8CADC}">
-		<Attribute id="menuPriority" value="0"/>
-	</ScriptClass>
+    <ScriptClass
+	classID="{80CBE1FC-3EC1-4A97-A79E-FC46990FAEE8}"
+	category="EditTask"
+	subCategory="TrackEdit"
+	name="TEST FUNCTIONS"
+	sourceFile="code.js"
+	functionName="createInstance"
+	metaClassID="{B6099740-B26D-4BC3-A471-CBAAAED8CADC}">
+	<Attribute id="menuPriority" value="0"/>
+    </ScriptClass>
 </ClassFactory>
 ```
 
-- **code.js**  
-*JavaScript code file*
+### **code.js**  
+*JavaScript code file.*
+
+***createInstance()** is the entry function used by classFactory.xml in this example although the name of that function and of this js code file are both irrelevant, they only have to match the names used in classfactory.xml.*
 ```
 include_file('functions.js')
 function testFunctions() 
@@ -156,12 +164,26 @@ function testFunctions()
 
     this.performEdit = function (context)
     {
-        // test print program array to console (1)
+        // ---------------------------------------
+    	// return all tracks with 'voc' in the name
+        var tracks = getTracksByName('voc')
+        for (i = 0; i < tracks.length; i++)
+        {
+            // do something
+        }
+	
+	// ----------------------------------------
+	
+        // test print Cubase patch script programs  
+	// array to console, arg(1)
+	// opens file selector dialog
         var inst = loadCubasePatchFile(1);
        
         return Host.Results.kResultOk;
     }
 }
+
+// Entry Function ---------------------------------
 
 function createInstance ()
 {
