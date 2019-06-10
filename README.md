@@ -124,9 +124,8 @@ A basic Studio One script package consists of *(minimum)* three files as outline
 ```
 
 - **classfactory.xml**  
-*Class definitions for each action*
+*Class definitions for each action, UID's must be unique*
 ```
-// UID's must be unique
 <?xml version="1.0" encoding="UTF-8"?>
 <ClassFactory>
 	<ScriptClass
