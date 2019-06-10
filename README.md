@@ -112,7 +112,7 @@ _You can use this function in your own custom patch manager script, to send prog
 A basic Studio One script package consists of *(minimum)* three files as outlined shown below zipped with a .package extender.
 
 - **metainfo.xml**  
-*Meta information for the package.  Package:ID value must be unique*
+*Meta information for the package, **Package:ID** must be unique*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <MetaInformation>
@@ -124,7 +124,7 @@ A basic Studio One script package consists of *(minimum)* three files as outline
 ```
 
 - **classfactory.xml**  
-*Class definitions for each action, UID's must be unique*
+*Class definitions for each action, **ClassID's** must be unique*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <ClassFactory>
@@ -142,7 +142,7 @@ A basic Studio One script package consists of *(minimum)* three files as outline
 ```
 
 - **code.js**  
-*JavaScript code file*
+*JavaScript code file, **createInstance** is the entry function from ClassFactory.xml*
 ```
 include_file('functions.js')
 function testFunctions() 
