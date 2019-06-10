@@ -107,7 +107,7 @@ _You can use this function in your own custom patch manager script, to send prog
 
 <HR>
 
-### Sample Code
+### Script Package Example
 
 A basic Studio One script package consists of *(minimum)* three files as outlined shown below zipped with a .package extender.
 
