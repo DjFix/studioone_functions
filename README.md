@@ -154,7 +154,7 @@ function testFunctions()
 
     this.performEdit = function (context)
     {
-        //test print program array to console
+        // test print program array to console (1)
         var inst = loadCubasePatchFile(1);
        
         return Host.Results.kResultOk;
