@@ -82,7 +82,7 @@ Centers pans on all selected channel(s)
 
 <HR>
 
-### External Instruments 
+### EXTERNAL INSTRUMENTS 
 
 _You can use this function in your own custom patch manager script, to send program and bank changes out to MIDI hardware._
 
@@ -98,7 +98,7 @@ _You can use this function in your own custom patch manager script, to send prog
     
 <HR>
 
-### Miscellaneous
+### MISCELLANEOUS
 
 - **Mute:** if (track.channel != undefined) {track.channel.mute = 1};
 - **Solo:** if {track.channel != undefined) {track.channel.solo = 1);
@@ -107,7 +107,7 @@ _You can use this function in your own custom patch manager script, to send prog
 
 <HR>
 
-### Script Package Example
+### SCRIPT PACKAGE EXAMPLE
 
 A Studio One script package consists of *(at minimum)* three files as outlined below, zipped with a **.package** extender.  
 *You can use this package to test various functions in functions.js.*
