@@ -150,9 +150,7 @@ A Studio One script package consists of *(at minimum)* three files as outlined b
 ### **code.js**  
 *JavaScript code file.*
 
-***createInstance()** is the entry function used by classFactory.xml in    
-this example although the name of that function and of this js code file are both irrelevant,    
-they only have to match the names used in classfactory.xml.*
+***createInstance()** is the entry function used by classFactory.xml in this example although the name of that function and of this js code file are both irrelevant, they only have to match the names used in classfactory.xml.*
 ```
 include_file('functions.js')
 function testFunctions() 
