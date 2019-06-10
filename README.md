@@ -144,7 +144,8 @@ This adds a new action named TEST FUNCTIONS to the command list and Track menu.*
 ```
 
 - **code.js**  
-*JavaScript code file. **createInstance()** is the entry function used by classFactory.xml in    
+*JavaScript code file.  
+**createInstance()** is the entry function used by classFactory.xml in    
 this example although the name of that function and of this js code file are both irrelevant,    
 they only have to match the names used in classfactory.xml.*
 ```
