@@ -112,7 +112,7 @@ _You can use this function in your own custom patch manager script, to send prog
 A basic Studio One script package consists of *(minimum)* three files as outlined shown below zipped with a .package extender.
 
 - **metainfo.xml**  
-*Meta information for the package*
+*Meta information for the package.  Package:ID value must be unique*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <MetaInformation>
