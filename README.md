@@ -115,16 +115,16 @@ A Studio One script package consists of *(at minimum)* three files as outlined b
 ### **metainfo.xml**  
 *Meta information for the script package.*
 
-	***Package:ID** must be unique*
-	```
-	<?xml version="1.0" encoding="UTF-8"?>
-	<MetaInformation>
-		<Attribute id="Package:ID" value="test.functions"/>
-		<Attribute id="Package:SkinFile" value="skin/"/>
-		<Attribute id="Package:TranslationFile" value="translations/"/>
-		<Attribute id="Package:Version" value="1.0.0/"/>
-	</MetaInformation>
-	```
+***Package:ID** must be unique*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInformation>
+	<Attribute id="Package:ID" value="test.functions"/>
+	<Attribute id="Package:SkinFile" value="skin/"/>
+	<Attribute id="Package:TranslationFile" value="translations/"/>
+	<Attribute id="Package:Version" value="1.0.0/"/>
+</MetaInformation>
+```
 
 ### **classfactory.xml**  
 *Class definitions for each individual action.* 
