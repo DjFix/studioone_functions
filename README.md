@@ -109,7 +109,8 @@ _You can use this function in your own custom patch manager script, to send prog
 
 ### Script Package Example
 
-A Studio One script package consists of *(at minimum)* three files as outlined below, zipped with a **.package** extender.
+A Studio One script package consists of *(at minimum)* three files as outlined below, zipped with a **.package** extender.  
+*You can use this package to test various functions in functions.js.*
 
 - **metainfo.xml**  
 *Meta information for the script package, **Package:ID** must be unique*
@@ -124,7 +125,7 @@ A Studio One script package consists of *(at minimum)* three files as outlined b
 ```
 
 - **classfactory.xml**  
-*Class definitions for each individual action, **ClassID's** must be unique   
+*Class definitions for each individual action, **ClassID's** must be unique.   
 This adds a new action named TEST FUNCTIONS to the command list and Track menu.*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
