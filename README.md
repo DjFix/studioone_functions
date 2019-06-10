@@ -119,10 +119,10 @@ A Studio One script package consists of *(at minimum)* three files as outlined b
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <MetaInformation>
-	<Attribute id="Package:ID" value="test.functions"/>
-	<Attribute id="Package:SkinFile" value="skin/"/>
-	<Attribute id="Package:TranslationFile" value="translations/"/>
-	<Attribute id="Package:Version" value="1.0.0/"/>
+    <Attribute id="Package:ID" value="test.functions"/>
+    <Attribute id="Package:SkinFile" value="skin/"/>
+    <Attribute id="Package:TranslationFile" value="translations/"/>
+    <Attribute id="Package:Version" value="1.0.0/"/>
 </MetaInformation>
 ```
 
@@ -134,16 +134,16 @@ A Studio One script package consists of *(at minimum)* three files as outlined b
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <ClassFactory>
-	<ScriptClass
-		classID="{80CBE1FC-3EC1-4A97-A79E-FC46990FAEE8}"
-		category="EditTask"
-		subCategory="TrackEdit"
-		name="TEST FUNCTIONS"
-		sourceFile="code.js"
-		functionName="createInstance"
-		metaClassID="{B6099740-B26D-4BC3-A471-CBAAAED8CADC}">
-		<Attribute id="menuPriority" value="0"/>
-	</ScriptClass>
+    <ScriptClass
+	classID="{80CBE1FC-3EC1-4A97-A79E-FC46990FAEE8}"
+	category="EditTask"
+	subCategory="TrackEdit"
+	name="TEST FUNCTIONS"
+	sourceFile="code.js"
+	functionName="createInstance"
+	metaClassID="{B6099740-B26D-4BC3-A471-CBAAAED8CADC}">
+	<Attribute id="menuPriority" value="0"/>
+    </ScriptClass>
 </ClassFactory>
 ```
 
