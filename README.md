@@ -128,8 +128,7 @@ A Studio One script package consists of *(at minimum)* three files as outlined b
 - **classfactory.xml:** *Class definitions for each individual action.* 
 
 ***ClassID's** must be unique.   
-This package adds a new action named TEST FUNCTIONS to the command list and Track menu.  
-menuPriority.value -1 = don't list in menu*
+**menuPriority** value="-1" is don't list in menu*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <ClassFactory>
