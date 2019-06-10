@@ -109,7 +109,10 @@ _You can use this function in your own custom patch manager script, to send prog
 
 ### Sample Code
 
-- **metainfo.xml**
+A basic Studio One script package consists of *(minimum)* three files as outlined shown below zipped with a .package extender.
+
+- **metainfo.xml**  
+*Meta information for the package*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <MetaInformation>
@@ -120,8 +123,8 @@ _You can use this function in your own custom patch manager script, to send prog
 </MetaInformation>
 ```
 
-- **classfactory.xml**
-
+- **classfactory.xml**  
+*Class definitions for each action*
 ```
 // UID's must be unique
 <?xml version="1.0" encoding="UTF-8"?>
@@ -139,8 +142,8 @@ _You can use this function in your own custom patch manager script, to send prog
 </ClassFactory>
 ```
 
-- **code.js**
-
+- **code.js**  
+*JavaScript code file*
 ```
 include_file('functions.js')
 function testFunctions() 
