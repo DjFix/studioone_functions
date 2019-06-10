@@ -124,7 +124,8 @@ A Studio One script package consists of *(at minimum)* three files as outlined b
 ```
 
 - **classfactory.xml**  
-*Class definitions for each individual action, **ClassID's** must be unique*
+*Class definitions for each individual action, **ClassID's** must be unique   
+This adds a new action named TEST FUNCTIONS to the command list and Track menu.*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <ClassFactory>
@@ -142,8 +143,8 @@ A Studio One script package consists of *(at minimum)* three files as outlined b
 ```
 
 - **code.js**  
-*JavaScript code file **createInstance** is the entry function from classFactory.xml in this  
-example although the name of that function is irrelevant as long as it matches the name in  
+*JavaScript code file. **createInstance()** is the entry function used by classFactory.xml in    
+this example although the name of that function is irrelevant as long as it matches the name in  
 classfactory.xml.*
 ```
 include_file('functions.js')
@@ -176,6 +177,8 @@ function testFunctions()
         return Host.Results.kResultOk;
     }
 }
+
+// Entry Function ---------------------------------
 
 function createInstance ()
 {
