@@ -156,12 +156,15 @@ function testFunctions()
 
     this.performEdit = function (context)
     {
-    	// get all tracks with 'voc' in the name
+        // ---------------------------------------
+    	// return all tracks with 'voc' in the name
         var tracks = getTracksByName('voc')
         for (i = 0; i < tracks.length; i++)
         {
-            // do stuff with them
+            // do something
         }
+	
+	// ----------------------------------------
 	
         // test print Cubase patch script programs  
 	// array to console, arg(1)
