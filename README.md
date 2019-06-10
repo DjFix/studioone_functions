@@ -112,8 +112,8 @@ _You can use this function in your own custom patch manager script, to send prog
 A Studio One script package consists of *(at minimum)* three files as outlined below, zipped with a **.package** extender.  
 *You can use this package to test various functions in functions.js.*
 
-- **metainfo.xml**  
-*Meta information for the script package, **Package:ID** must be unique*
+- **metainfo.xml:** *Meta information for the script package.**  
+***Package:ID** must be unique*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <MetaInformation>
@@ -124,9 +124,9 @@ A Studio One script package consists of *(at minimum)* three files as outlined b
 </MetaInformation>
 ```
 
-- **classfactory.xml**  
-*Class definitions for each individual action, **ClassID's** must be unique.   
-This adds a new action named TEST FUNCTIONS to the command list and Track menu.*
+- **classfactory.xml:** *Class definitions for each individual action.*  
+***ClassID's** must be unique.   
+This package adds a new action named TEST FUNCTIONS to the command list and Track menu.*
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <ClassFactory>
@@ -143,8 +143,7 @@ This adds a new action named TEST FUNCTIONS to the command list and Track menu.*
 </ClassFactory>
 ```
 
-- **code.js**  
-*JavaScript code file.  
+- **code.js:** *JavaScript code file.  
 **createInstance()** is the entry function used by classFactory.xml in    
 this example although the name of that function and of this js code file are both irrelevant,    
 they only have to match the names used in classfactory.xml.*
