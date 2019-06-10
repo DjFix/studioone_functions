@@ -156,8 +156,16 @@ function testFunctions()
 
     this.performEdit = function (context)
     {
+    	// get all tracks with 'voc' in the name
+        var tracks = getTracksByName('voc')
+        for (i = 0; i < tracks.length; i++)
+        {
+            // do stuff with them
+        }
+	
         // test print Cubase patch script programs  
 	// array to console, arg(1)
+	// opens file selector dialog
         var inst = loadCubasePatchFile(1);
        
         return Host.Results.kResultOk;
