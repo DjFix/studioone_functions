@@ -104,3 +104,65 @@ _You can use this function in your own custom patch manager script, to send prog
 - **Solo:** if {track.channel != undefined) {track.channel.solo = 1);
 - **Fire an Action:** Host.GUI.Commands.interpretCommand("category","action")
 - **getDateTime ():** Returns month/day/year (hour_minute_seconds)
+
+<HR>
+
+### Sample Code
+
+- **metainfo.xml**
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInformation>
+	<Attribute id="Package:ID" value="test.functions"/>
+	<Attribute id="Package:SkinFile" value="skin/"/>
+	<Attribute id="Package:TranslationFile" value="translations/"/>
+	<Attribute id="Package:Version" value="1.0.0/"/>
+</MetaInformation>
+```
+
+- **classfactory.xml**
+
+```
+// UID's must be unique
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassFactory>
+	<ScriptClass
+		classID="{80CBE1FC-3EC1-4A97-A79E-FC46990FAEE8}"
+		category="EditTask"
+		subCategory="TrackEdit"
+		name="TEST FUNCTIONS"
+		sourceFile="code.js"
+		functionName="createInstance"
+		metaClassID="{B6099740-B26D-4BC3-A471-CBAAAED8CADC}">
+		<Attribute id="menuPriority" value="0"/>
+	</ScriptClass>
+</ClassFactory>
+```
+
+- **code.js**
+
+```
+include_file('functions.js')
+function testFunctions() 
+{
+    this.interfaces = [Host.Interfaces.IEditTask];
+
+    this.prepareEdit = function (context)
+    {        
+        return Host.Results.kResultOk;
+    }
+
+    this.performEdit = function (context)
+    {
+        //test print program array to console
+        var inst = loadCubasePatchFile(1);
+       
+        return Host.Results.kResultOk;
+    }
+}
+
+function createInstance ()
+{
+    return new testFunctions;
+}
+```
