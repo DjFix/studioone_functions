@@ -55,6 +55,10 @@ _setPan(track, 'L45')_
 ### CHANNELS </br>
 _[does not include input or sub-out channels]_
 
+-  **resetInputs** (_selected [bool]_)</br>
+Set input gains to unity  
+Argument is optional: None or 0 = all, 1 = selected
+
 -  **getChannels** (_selected [bool]_)</br>
 Returns an array of mixer channels</br>
 Argument is optional: None or 0 = all Channels, 1 = selected channels
