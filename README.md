@@ -40,8 +40,8 @@ Replace parts of all track names. Case sensitive matching (search string, replac
 - **selectTrack** (track _[object]_)</br>
 Use this to optionally select tracks when iterating when necessary
 
-- **setTrackColor** (channel _[object]_, color _[hex]_)</br>
-Sets a channel to a hex color, # char irrelevant
+- **setTrackColor** (track _[object]_, color _[hex]_)</br>
+Sets a track to a hex color, # char irrelevant
 
 - **getPan** (track _[object]_)</br>
 Returns the pan value from a track's channel if any
