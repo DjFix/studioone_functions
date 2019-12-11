@@ -420,25 +420,25 @@ function loadCubasePatchFile(vDebug) {
         var idx = 0;
         var _0xDBC4 = "";
         while (!vFile.endOfStream) {
-            var _0xDC91 = vFile.readLine().toString();
-            if (_0xDC91.trim() == "" || _0xDC91 == null) {
+            var vTextLine = vFile.readLine().toString();
+            if (vTextLine.trim() == "" || vTextLine == null) {
                 continue
             };
-            if (_0xDC91.indexOf("[script name]") > -1) {
-                _0xDC91 = _0xDC91.replace("\t", "").replace("[script name]", "");
-                vOutArray[idx] = _0xDC91.trim();
+            if (vTextLine.indexOf("[script name]") > -1) {
+                vTextLine = vTextLine.replace("\t", "").replace("[script name]", "");
+                vOutArray[idx] = vTextLine.trim();
                 idx++;
                 continue
             };
-            if (_0xDC91.indexOf("[g") > -1) {
-                _0xDC91 = _0xDC91.replace("\t", "");
-                var _0xDC16 = _0xDC91.split("]");
+            if (vTextLine.indexOf("[g") > -1) {
+                vTextLine = vTextLine.replace("\t", "");
+                var _0xDC16 = vTextLine.split("]");
                 _0xDBC4 = _0xDC16[1].trim();
                 continue
             };
-            if (_0xDC91.indexOf("[p") > -1 && _0xDC91.indexOf(",") > -1) {
-                _0xDC91 = _0xDC91.replace("\t", "");
-                var _0xDC16 = _0xDC91.split("]");
+            if (vTextLine.indexOf("[p") > -1 && vTextLine.indexOf(",") > -1) {
+                vTextLine = vTextLine.replace("\t", "");
+                var _0xDC16 = vTextLine.split("]");
                 var _0xDD5E = _0xDC16[1].trim();
                 var _0xDD35 = _0xDC16[0].split(",");
                 var _0xDCE3 = _0xDD35[2];
