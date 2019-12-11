@@ -225,19 +225,19 @@ function getChannels(vSelected) {
         vSelected = 0
     };
     var vChannelList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
-    var _0xD934 = [];
+    var vChannelOut = [];
     switch (vSelected) {
     case 0:
         for (i = 0; i < vChannelList.numChannels; i++) {
-            _0xD934.push(vChannelList.getChannel(i))
+            vChannelOut.push(vChannelList.getChannel(i))
         };
-        return _0xD934;
+        return vChannelOut;
         break;
     case 1:
         for (i = 0; i < vChannelList.numSelectedChannels; i++) {
-            _0xD934.push(vChannelList.getSelectedChannel(i))
+            vChannelOut.push(vChannelList.getSelectedChannel(i))
         };
-        return _0xD934;
+        return vChannelOut;
         break
     }
 }
@@ -253,24 +253,24 @@ function getChannelsByName(vName, vCaseMatching) {
         (vCaseMatching = 0)
     };
     var vChannelList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
-    var _0xD934 = [];
+    var vChannelOut = [];
     switch (vCaseMatching) {
     case 0:
         for (i = 0; i < vChannelList.numChannels; i++) {
             var vChannel = vChannelList.getChannel(i);
             var _0xD9D8 = vChannel.label.trim();
             if (_0xD9D8.toUpperCase().indexOf(vName.toUpperCase()) > -1) {
-                _0xD934.push(vChannel)
+                vChannelOut.push(vChannel)
             }
         };
-        return _0xD934;
+        return vChannelOut;
         break;
     case 1:
         for (i = 0; i < vChannelList.numChannels; i++) {
             var vChannel = vChannelList.getChannel(i);
             var _0xD9D8 = vChannel.label.trim();
             if (channlName.indexOf(vName) > -1) {
-                _0xD934.push(vChannel)
+                vChannelOut.push(vChannel)
             }
         };
         return tracks;
