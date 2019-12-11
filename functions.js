@@ -175,7 +175,9 @@ function getColorVal(_0xDA7C) {
     return ((_0xDA2A << 16) | (_0xDA53 << 8) | _0xDAA5) | 0xff000000
 }
 
-function setProgram(_0xDF73, _0xDFC5) {
+// setProgram (bank [integer], program [integer])
+// Set bank and program for an external instrument
+function setProgram(vBank, vProgram) {
     var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
     if (_0xDB49.getSelectedTrack(0) == undefined || _0xDB49.getSelectedTrack(0).mediaType != "Music") {
         return
@@ -187,8 +189,8 @@ function setProgram(_0xDF73, _0xDFC5) {
     var _0xDFEE = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MusicTrackDevice" + "/Channels/MusicTrack/" + _0xDF9C + "/Programs");
     try {
         _0xDFEE.findParameter("programEnabled").setValue(1, true);
-        _0xDFEE.findParameter("bankNumber").setValue(_0xDF73, true);
-        _0xDFEE.findParameter("programNumber").setValue(_0xDFC5, true)
+        _0xDFEE.findParameter("bankNumber").setValue(vBank, true);
+        _0xDFEE.findParameter("programNumber").setValue(vProgram, true)
     } catch (err) {
         return
     }
