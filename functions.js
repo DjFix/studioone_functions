@@ -148,7 +148,7 @@ function setPan(vTrack, vValue) {
 
 // renameTracks (find [string], replace [string])
 // Replace parts of all track names. Case sensitive matching (search string, replacment string)
-function renameTracks(_0xDE7D, _0xDE54) {
+function renameTracks(vFind, vReplace) {
     let vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
     let _0xDE02 = vTrackList.getTrack(0).getRoot().createFunctions();
     if (_0xDE02 == undefined) {
@@ -160,7 +160,7 @@ function renameTracks(_0xDE7D, _0xDE54) {
             continue
         };
         var vName = vTrack.name.toString();
-        var _0xDE2B = vName.replace(_0xDE7D, _0xDE54);
+        var _0xDE2B = vName.replace(vFind, vReplace);
         _0xDE02.renameEvent(vTrack, _0xDE2B.toString())
     }
 }
