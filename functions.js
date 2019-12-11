@@ -320,8 +320,6 @@ function resetInputs(vSelected) {
 }
 
 
-
-
 // setMasterFader (level [integer])
 // Sets the master bus fader to a specific dB value.
 // Example: setMasterFader( -10.5);
@@ -330,11 +328,13 @@ function setMasterFader(vLevel) {
     _0xDF4A.findParameter("masterVolume").string = vLevel.toString()
 }
 
-function setChannelColor(vChannel, _0xDF21) {
-    if (_0xDF21.indexOf("#") == -1) {
-        _0xDF21 = "#" + _0xDF21
+// setChannelColor (channel [object], color [hex])
+// Sets a channel to a hex color, # char irrelevant
+function setChannelColor(vChannel, vColor) {
+    if (vColor.indexOf("#") == -1) {
+        vColor = "#" + vColor
     };
-    vChannel.findParameter("color").string = _0xDF21
+    vChannel.findParameter("color").string = vColor
 }
 
 function loadCubasePatchFile(vValue) {
