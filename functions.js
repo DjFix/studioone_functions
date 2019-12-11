@@ -86,16 +86,16 @@ function getTracks(vSelected) {
 // getTracksByName (string, [integer])
 // Returns an array of tracks where the track name contains the string.
 // Optional case sensitivy matching: 0 or none = no case sensitivity, 1 = case sensitive
-function getTracksByName(vName, _0xD9AF) {
+function getTracksByName(vName, vCaseMatching) {
     if (vName.trim() == 0) {
         return
     };
-    if (_0xD9AF != 0 && _0xD9AF != 1) {
-        (_0xD9AF = 0)
+    if (vCaseMatching != 0 && vCaseMatching != 1) {
+        (vCaseMatching = 0)
     };
     var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
     var _0xDB72 = [];
-    switch (_0xD9AF) {
+    switch (vCaseMatching) {
     case 0:
         for (i = 0; i < _0xDB49.numTracks; i++) {
             var vTrack = _0xDB49.getTrack(i);
@@ -222,16 +222,16 @@ function getChannels(vSelected) {
 // getChannelsByName (name [string], caseMatching [bool])
 // Returns an array of mixer channels where the channel name contains the string.
 // Optional case sensitivy matching: 0 or none = no case sensitivity, 1 = case sensitive
-function getChannelsByName(vName, _0xD9AF) {
+function getChannelsByName(vName, vCaseMatching) {
     if (vName.trim() == 0) {
         return
     };
-    if (_0xD9AF != 0 && _0xD9AF != 1) {
-        (_0xD9AF = 0)
+    if (vCaseMatching != 0 && vCaseMatching != 1) {
+        (vCaseMatching = 0)
     };
     var _0xD890 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
     var _0xD934 = [];
-    switch (_0xD9AF) {
+    switch (vCaseMatching) {
     case 0:
         for (i = 0; i < _0xD890.numChannels; i++) {
             var _0xD867 = _0xD890.getChannel(i);
