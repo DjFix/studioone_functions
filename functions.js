@@ -131,6 +131,8 @@ function setPan(vTrack, _0xDACE) {
     }
 }
 
+// renameTracks (find [string], replace [string])
+// Replace parts of all track names. Case sensitive matching (search string, replacment string)
 function renameTracks(_0xDE7D, _0xDE54) {
     let _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
     let _0xDE02 = _0xDB49.getTrack(0).getRoot().createFunctions();
