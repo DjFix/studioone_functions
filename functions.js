@@ -163,8 +163,8 @@ function setPan(vTrack, vValue) {
 // Replace parts of all track names. Case sensitive matching (search string, replacment string)
 function renameTracks(vFind, vReplace) {
     let vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
-    let vTracks = vTrackList.getTrack(0).getRoot().createFunctions();
-    if (vTracks == undefined) {
+    let vTracksFunction = vTrackList.getTrack(0).getRoot().createFunctions();
+    if (vTracksFunction == undefined) {
         return
     };
     for (i = 0; i < vTrackList.numTracks; i++) {
@@ -174,7 +174,7 @@ function renameTracks(vFind, vReplace) {
         };
         var vName = vTrack.name.toString();
         var vNameNew = vName.replace(vFind, vReplace);
-        vTracks.renameEvent(vTrack, vNameNew.toString())
+        vTracksFunction.renameEvent(vTrack, vNameNew.toString())
     }
 }
 
@@ -182,12 +182,12 @@ function renameTracks(vFind, vReplace) {
 // Sets a track to a hex color, # char irrelevant
 function setTrackColor(vTrack, vColor) {
     var vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
-    var vTracks = vTrackList.getTrack(0).getRoot().createFunctions();
-    if (vTracks == undefined) {
+    var vTracksFunction = vTrackList.getTrack(0).getRoot().createFunctions();
+    if (vTracksFunction == undefined) {
         return
     };
     var _0xE017 = getColorVal(vColor.replace("#", ""));
-    vTracks.colorizeEvent(vTrack, _0xE017)
+    vTracksFunction.colorizeEvent(vTrack, _0xE017)
 }
 
 function getColorVal(vColor) {
