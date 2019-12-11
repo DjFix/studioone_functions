@@ -362,12 +362,12 @@ function setProgram(vBank, vProgram) {
 // Program Name, program number, bank number, group name
 function loadCubasePatchFile(vDebug) {
     var vFileSelector = Host.Classes.createInstance("CCL:FileSelector");
-    var _0xDDD9 = {
+    var vCubasePatch = {
         description: ("Cubase Patch Script"),
         extension: "txt",
         mimetype: "text"
     };
-    vFileSelector.addFilter(_0xDDD9);
+    vFileSelector.addFilter(vCubasePatch);
     vFileSelector.runOpen();
     var _0xDD0C = vFileSelector.getPath();
     var _0xDD87 = [];
