@@ -385,11 +385,11 @@ function setProgram(vBank, vProgram) {
     if (vTrackList.getSelectedTrack(0) == undefined || vTrackList.getSelectedTrack(0).mediaType != "Music") {
         return
     };
-    var _0xDF9C = vTrackList.getSelectedTrack(0).channel.name;
-    if (_0xDF9C == undefined) {
+    var vChannelName = vTrackList.getSelectedTrack(0).channel.name;
+    if (vChannelName == undefined) {
         return
     };
-    var _0xDFEE = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MusicTrackDevice" + "/Channels/MusicTrack/" + _0xDF9C + "/Programs");
+    var _0xDFEE = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MusicTrackDevice" + "/Channels/MusicTrack/" + vChannelName + "/Programs");
     try {
         _0xDFEE.findParameter("programEnabled").setValue(1, true);
         _0xDFEE.findParameter("bankNumber").setValue(vBank, true);
