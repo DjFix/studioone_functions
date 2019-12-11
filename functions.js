@@ -1,3 +1,6 @@
+// Fire an Action:
+//  Host.GUI.Commands.interpretCommand("category","action")
+
 /*   MESSAGING   */
 
 // alert (value)
@@ -12,6 +15,8 @@ function alert(vValue) {
 function print(vValue) {
     Host.Console.writeLine(vValue.toString())
 }
+
+/*   MISCELLANEOUS   */
 
 // getDateTime ():
 // Returns month/day/year (hour_minute_seconds)
@@ -29,6 +34,8 @@ function getAllPropertyNames(_0xD8B9) {
     Host.GUI.alert(String(_0xD90B))
 }
 
+/*   TRACKS   */
+
 // selectTrack (track [object])
 // Use this to optionally select tracks when iterating when necessary
 function selectTrack(vTrack) {
@@ -36,6 +43,8 @@ function selectTrack(vTrack) {
     _0xDB49.selectTrack(vTrack)
 }
 
+// muteTrack:
+// if (track.channel != undefined) {track.channel.mute = 1};
 function muteTrack(vTrack) {
     if (vTrack.channel != undefined) {
         try {
@@ -44,6 +53,8 @@ function muteTrack(vTrack) {
     }
 }
 
+// soloTrack:
+// if {track.channel != undefined) {track.channel.solo = 1);
 function soloTrack(vTrack) {
     if (vTrack.channel != undefined) {
         try {
@@ -119,7 +130,6 @@ function getTracksByName(vName, vCaseMatching) {
     }
 }
 
-
 // getPan (track [object])
 // Returns the pan value from a track's channel if any
 function getPan(vTrack) {
@@ -127,8 +137,6 @@ function getPan(vTrack) {
         return vTrack.channel.findParameter("pan").string.replace("<", "").replace(">", "")
     }
 }
-
-
 
 // setPan (track [object], value [string])
 // Sets the pan value for a track's channel if any setPan(track, 'L45')
@@ -177,26 +185,8 @@ function getColorVal(vColor) {
     return ((_0xDA2A << 16) | (_0xDA53 << 8) | _0xDAA5) | 0xff000000
 }
 
-// setProgram (bank [integer], program [integer])
-// Set bank and program for an external instrument
-function setProgram(vBank, vProgram) {
-    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
-    if (_0xDB49.getSelectedTrack(0) == undefined || _0xDB49.getSelectedTrack(0).mediaType != "Music") {
-        return
-    };
-    var _0xDF9C = _0xDB49.getSelectedTrack(0).channel.name;
-    if (_0xDF9C == undefined) {
-        return
-    };
-    var _0xDFEE = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MusicTrackDevice" + "/Channels/MusicTrack/" + _0xDF9C + "/Programs");
-    try {
-        _0xDFEE.findParameter("programEnabled").setValue(1, true);
-        _0xDFEE.findParameter("bankNumber").setValue(vBank, true);
-        _0xDFEE.findParameter("programNumber").setValue(vProgram, true)
-    } catch (err) {
-        return
-    }
-}
+/*   CHANNELS    */
+// [does not include input or sub-out channels]
 
 // getChannels (selected [bool])
 // Returns an array of mixer channels
@@ -341,7 +331,29 @@ function setChannelColor(vChannel, vColor) {
     vChannel.findParameter("color").string = vColor
 }
 
+/*   EXTERNAL INSTRUMENTS   */
+// You can use this function in your own custom patch manager script, to send program and bank changes out to MIDI hardware.
 
+// setProgram (bank [integer], program [integer])
+// Set bank and program for an external instrument
+function setProgram(vBank, vProgram) {
+    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    if (_0xDB49.getSelectedTrack(0) == undefined || _0xDB49.getSelectedTrack(0).mediaType != "Music") {
+        return
+    };
+    var _0xDF9C = _0xDB49.getSelectedTrack(0).channel.name;
+    if (_0xDF9C == undefined) {
+        return
+    };
+    var _0xDFEE = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MusicTrackDevice" + "/Channels/MusicTrack/" + _0xDF9C + "/Programs");
+    try {
+        _0xDFEE.findParameter("programEnabled").setValue(1, true);
+        _0xDFEE.findParameter("bankNumber").setValue(vBank, true);
+        _0xDFEE.findParameter("programNumber").setValue(vProgram, true)
+    } catch (err) {
+        return
+    }
+}
 
 // loadCubasePatchFile (debug [integer])
 // Returns an array from a Cubase patch script (.txt) file.
