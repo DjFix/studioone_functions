@@ -337,6 +337,13 @@ function setChannelColor(vChannel, vColor) {
     vChannel.findParameter("color").string = vColor
 }
 
+
+
+// loadCubasePatchFile (debug [integer])
+// Returns an array from a Cubase patch script (.txt) file.
+// Argument is optional. 1 = print array to console.
+// Array item 0 is the Instrument Name, all other array items are comma delimited as follows:
+// Program Name, program number, bank number, group name
 function loadCubasePatchFile(vValue) {
     var _0xDC3F = Host.Classes.createInstance("CCL:FileSelector");
     var _0xDDD9 = {
