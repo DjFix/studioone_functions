@@ -283,7 +283,10 @@ function centerPans() {
     }
 }
 
-function resetInputs(_0xDECF) {
+// resetInputs (selected [bool])
+// Set input gains to unity
+// Argument is optional: None or 0 = all, 1 = selected
+function resetInputs(vSelected) {
     var _0xDEA6 = Host.Objects.getObjectByUrl("://studioapp/Application").findParameter("appNameAndVersion").value.replace("Studio One", "").trim().substring(0, 3);
     if (_0xDEA6 < 4.5) {
         Host.GUI.alert("This function requires Studio One 4.5 or greater.");
@@ -299,7 +302,7 @@ function resetInputs(_0xDECF) {
             _0xD890.getSelectedChannel(i).findParameter("selected").setValue(0, true)
         }
     };
-    if (_0xDECF == 1) {
+    if (vSelected == 1) {
         for (i = 0; i < _0xDEF8.length; i++) {
             var vChannel = _0xDEF8[i];
             if (vChannel.find("InputFX") != undefined) {
