@@ -52,6 +52,9 @@ function soloTrack(vTrack) {
     }
 }
 
+// getTracks (selected [bool])
+// Returns an array of arrange tracks
+// Argument is optional: None or 0 = all tracks, 1 = selected tracks
 function getTracks(vSelected) {
     if (vSelected != 0 && vSelected != 1) {
         vSelected = 0
