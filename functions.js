@@ -325,8 +325,8 @@ function centerPans() {
 // Set input gains to unity
 // Argument is optional: None or 0 = all, 1 = selected
 function resetInputs(vSelected) {
-    var _0xDEA6 = Host.Objects.getObjectByUrl("://studioapp/Application").findParameter("appNameAndVersion").value.replace("Studio One", "").trim().substring(0, 3);
-    if (_0xDEA6 < 4.5) {
+    var vStudioOneVersion = Host.Objects.getObjectByUrl("://studioapp/Application").findParameter("appNameAndVersion").value.replace("Studio One", "").trim().substring(0, 3);
+    if (vStudioOneVersion < 4.5) {
         Host.GUI.alert("This function requires Studio One 4.5 or greater.");
         return
     };
