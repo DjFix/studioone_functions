@@ -194,6 +194,9 @@ function setProgram(_0xDF73, _0xDFC5) {
     }
 }
 
+// getChannels (selected [bool])
+// Returns an array of mixer channels
+// Argument is optional: None or 0 = all Channels, 1 = selected channels
 function getChannels(vSelected) {
     if (vSelected != 0 && vSelected != 1) {
         vSelected = 0
