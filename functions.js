@@ -417,7 +417,7 @@ function loadCubasePatchFile(vDebug) {
     var vOutArray = [];
     var vFile = Host.IO.openTextFile(vPath);
     if (vFile) {
-        var _0xDC68 = 0;
+        var idx = 0;
         var _0xDBC4 = "";
         while (!vFile.endOfStream) {
             var _0xDC91 = vFile.readLine().toString();
@@ -426,8 +426,8 @@ function loadCubasePatchFile(vDebug) {
             };
             if (_0xDC91.indexOf("[script name]") > -1) {
                 _0xDC91 = _0xDC91.replace("\t", "").replace("[script name]", "");
-                vOutArray[_0xDC68] = _0xDC91.trim();
-                _0xDC68++;
+                vOutArray[idx] = _0xDC91.trim();
+                idx++;
                 continue
             };
             if (_0xDC91.indexOf("[g") > -1) {
@@ -444,15 +444,15 @@ function loadCubasePatchFile(vDebug) {
                 var _0xDCE3 = _0xDD35[2];
                 var _0xDCBA = _0xDD35[3];
                 var _0xDBED = (_0xDCE3 * 128) + _0xDCBA;
-                vOutArray[_0xDC68] = (_0xDD5E + "," + _0xDD35[1] + "," + _0xDBED + "," + _0xDBC4);
-                _0xDC68++;
+                vOutArray[idx] = (_0xDD5E + "," + _0xDD35[1] + "," + _0xDBED + "," + _0xDBC4);
+                idx++;
                 continue
             }
         };
         vFile.close();
         if (vDebug == 1) {
-            for (_0xDC68 = 0; _0xDC68 < vOutArray.length; _0xDC68++) {
-                print(vOutArray[_0xDC68])
+            for (idx = 0; idx < vOutArray.length; idx++) {
+                print(vOutArray[idx])
             }
         };
         return vOutArray
