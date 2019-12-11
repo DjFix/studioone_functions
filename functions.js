@@ -414,7 +414,7 @@ function loadCubasePatchFile(vDebug) {
     vFileSelector.addFilter(vCubasePatch);
     vFileSelector.runOpen();
     var vPath = vFileSelector.getPath();
-    var _0xDD87 = [];
+    var vOutArray = [];
     var vFile = Host.IO.openTextFile(vPath);
     if (vFile) {
         var _0xDC68 = 0;
@@ -426,7 +426,7 @@ function loadCubasePatchFile(vDebug) {
             };
             if (_0xDC91.indexOf("[script name]") > -1) {
                 _0xDC91 = _0xDC91.replace("\t", "").replace("[script name]", "");
-                _0xDD87[_0xDC68] = _0xDC91.trim();
+                vOutArray[_0xDC68] = _0xDC91.trim();
                 _0xDC68++;
                 continue
             };
@@ -444,17 +444,17 @@ function loadCubasePatchFile(vDebug) {
                 var _0xDCE3 = _0xDD35[2];
                 var _0xDCBA = _0xDD35[3];
                 var _0xDBED = (_0xDCE3 * 128) + _0xDCBA;
-                _0xDD87[_0xDC68] = (_0xDD5E + "," + _0xDD35[1] + "," + _0xDBED + "," + _0xDBC4);
+                vOutArray[_0xDC68] = (_0xDD5E + "," + _0xDD35[1] + "," + _0xDBED + "," + _0xDBC4);
                 _0xDC68++;
                 continue
             }
         };
         vFile.close();
         if (vDebug == 1) {
-            for (_0xDC68 = 0; _0xDC68 < _0xDD87.length; _0xDC68++) {
-                print(_0xDD87[_0xDC68])
+            for (_0xDC68 = 0; _0xDC68 < vOutArray.length; _0xDC68++) {
+                print(vOutArray[_0xDC68])
             }
         };
-        return _0xDD87
+        return vOutArray
     }
 }
