@@ -369,9 +369,9 @@ function loadCubasePatchFile(vDebug) {
     };
     vFileSelector.addFilter(vCubasePatch);
     vFileSelector.runOpen();
-    var _0xDD0C = vFileSelector.getPath();
+    var vPath = vFileSelector.getPath();
     var _0xDD87 = [];
-    var _0xDDB0 = Host.IO.openTextFile(_0xDD0C);
+    var _0xDDB0 = Host.IO.openTextFile(vPath);
     if (_0xDDB0) {
         var _0xDC68 = 0;
         var _0xDBC4 = "";
