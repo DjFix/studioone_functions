@@ -331,18 +331,18 @@ function resetInputs(vSelected) {
         return
     };
     var vChannelList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
-    var _0xDEF8 = [];
+    var vChannelsSelected = [];
     if (vChannelList.numSelectedChannels > 0) {
         for (i = 0; i < vChannelList.numSelectedChannels; i++) {
-            _0xDEF8.push(vChannelList.getSelectedChannel(i))
+            vChannelsSelected.push(vChannelList.getSelectedChannel(i))
         };
         for (i = 0; i < vChannelList.numSelectedChannels; i++) {
             vChannelList.getSelectedChannel(i).findParameter("selected").setValue(0, true)
         }
     };
     if (vSelected == 1) {
-        for (i = 0; i < _0xDEF8.length; i++) {
-            var vChannel = _0xDEF8[i];
+        for (i = 0; i < vChannelsSelected.length; i++) {
+            var vChannel = vChannelsSelected[i];
             if (vChannel.find("InputFX") != undefined) {
                 vChannel.find("InputFX").findParameter("gain").setValue(0, true)
             }
