@@ -157,18 +157,20 @@ function renameTracks(_0xDE7D, _0xDE54) {
     }
 }
 
-function setTrackColor(vTrack, _0xDA7C) {
+// setTrackColor (track [object], color [hex])
+// Sets a track to a hex color, # char irrelevant
+function setTrackColor(vTrack, vColor) {
     var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
     var _0xDE02 = _0xDB49.getTrack(0).getRoot().createFunctions();
     if (_0xDE02 == undefined) {
         return
     };
-    var _0xE017 = getColorVal(_0xDA7C.replace("#", ""));
+    var _0xE017 = getColorVal(vColor.replace("#", ""));
     _0xDE02.colorizeEvent(vTrack, _0xE017)
 }
 
-function getColorVal(_0xDA7C) {
-    let vValue = parseInt(_0xDA7C, 16);
+function getColorVal(vColor) {
+    let vValue = parseInt(vColor, 16);
     let _0xDAA5 = (vValue >> 16) & 0xff;
     let _0xDA53 = (vValue >> 8) & 0xff;
     let _0xDA2A = vValue & 0xff;
