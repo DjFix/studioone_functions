@@ -84,25 +84,25 @@ function getTracks(vSelected) {
         vSelected = 0
     };
     var vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
-    var _0xDB72 = [];
+    var vOutTrack = [];
     switch (vSelected) {
     case 0:
         for (i = 0; i < vTrackList.numTracks; i++) {
             var vTrack = vTrackList.getTrack(i);
-            if (_0xDB72.indexOf(vTrack) == -1) {
-                _0xDB72.push(vTrack)
+            if (vOutTrack.indexOf(vTrack) == -1) {
+                vOutTrack.push(vTrack)
             }
         };
-        return _0xDB72;
+        return vOutTrack;
         break;
     case 1:
         for (i = 0; i < vTrackList.numSelectedTracks; i++) {
             var vTrack = vTrackList.getSelectedTrack(i);
-            if (_0xDB72.indexOf(vTrack) == -1) {
-                _0xDB72.push(vTrack)
+            if (vOutTrack.indexOf(vTrack) == -1) {
+                vOutTrack.push(vTrack)
             }
         };
-        return _0xDB72;
+        return vOutTrack;
         break
     }
 }
@@ -118,27 +118,27 @@ function getTracksByName(vName, vCaseMatching) {
         (vCaseMatching = 0)
     };
     var vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
-    var _0xDB72 = [];
+    var vOutTrack = [];
     switch (vCaseMatching) {
     case 0:
         for (i = 0; i < vTrackList.numTracks; i++) {
             var vTrack = vTrackList.getTrack(i);
             var _0xDB9B = vTrack.name.trim();
-            if (_0xDB9B.toUpperCase().indexOf(vName.toUpperCase()) > -1 && _0xDB72.indexOf(vTrack) == -1) {
-                _0xDB72.push(vTrack)
+            if (_0xDB9B.toUpperCase().indexOf(vName.toUpperCase()) > -1 && vOutTrack.indexOf(vTrack) == -1) {
+                vOutTrack.push(vTrack)
             }
         };
-        return _0xDB72;
+        return vOutTrack;
         break;
     case 1:
         for (i = 0; i < vTrackList.numTracks; i++) {
             var vTrack = vTrackList.getTrack(i);
             var _0xDB9B = vTrack.name.trim();
-            if (_0xDB9B.indexOf(vName) > -1 && _0xDB72.indexOf(vTrack) == -1) {
-                _0xDB72.push(vTrack)
+            if (_0xDB9B.indexOf(vName) > -1 && vOutTrack.indexOf(vTrack) == -1) {
+                vOutTrack.push(vTrack)
             }
         };
-        return _0xDB72;
+        return vOutTrack;
         break
     }
 }
