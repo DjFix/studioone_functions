@@ -261,6 +261,8 @@ function getFader(vChannel) {
     return vChannel.findParameter("volume").string
 }
 
+// setFader (channel [object], level [integer])
+// Sets a fader to a specific dB value. -144 to 10
 function setFader(vChannel, vValue) {
     newValue = (Math.pow(10, parseFloat(vValue / 20)));
     if (vChannel.findParameter("volume") == undefined) {
