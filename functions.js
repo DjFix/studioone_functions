@@ -83,6 +83,9 @@ function getTracks(vSelected) {
     }
 }
 
+// getTracksByName (string, [integer])
+// Returns an array of tracks where the track name contains the string.
+// Optional case sensitivy matching: 0 or none = no case sensitivity, 1 = case sensitive
 function getTracksByName(_0xDA01, _0xD9AF) {
     if (_0xDA01.trim() == 0) {
         return
