@@ -361,15 +361,15 @@ function setProgram(vBank, vProgram) {
 // Array item 0 is the Instrument Name, all other array items are comma delimited as follows:
 // Program Name, program number, bank number, group name
 function loadCubasePatchFile(vDebug) {
-    var _0xDC3F = Host.Classes.createInstance("CCL:FileSelector");
+    var vFileSelector = Host.Classes.createInstance("CCL:FileSelector");
     var _0xDDD9 = {
         description: ("Cubase Patch Script"),
         extension: "txt",
         mimetype: "text"
     };
-    _0xDC3F.addFilter(_0xDDD9);
-    _0xDC3F.runOpen();
-    var _0xDD0C = _0xDC3F.getPath();
+    vFileSelector.addFilter(_0xDDD9);
+    vFileSelector.runOpen();
+    var _0xDD0C = vFileSelector.getPath();
     var _0xDD87 = [];
     var _0xDDB0 = Host.IO.openTextFile(_0xDD0C);
     if (_0xDDB0) {
