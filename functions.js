@@ -128,6 +128,10 @@ function getPan(vTrack) {
     }
 }
 
+
+
+// setPan (track [object], value [string])
+// Sets the pan value for a track's channel if any setPan(track, 'L45')
 function setPan(vTrack, _0xDACE) {
     if (vTrack.channel.findParameter("pan") != undefined) {
         return vTrack.channel.findParameter("pan").string = _0xDACE
