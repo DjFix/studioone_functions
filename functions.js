@@ -258,8 +258,8 @@ function getChannelsByName(vName, vCaseMatching) {
     case 0:
         for (i = 0; i < vChannelList.numChannels; i++) {
             var vChannel = vChannelList.getChannel(i);
-            var _0xD9D8 = vChannel.label.trim();
-            if (_0xD9D8.toUpperCase().indexOf(vName.toUpperCase()) > -1) {
+            var vChannelLabelTrimmed = vChannel.label.trim();
+            if (vChannelLabelTrimmed.toUpperCase().indexOf(vName.toUpperCase()) > -1) {
                 vChannelOut.push(vChannel)
             }
         };
@@ -268,7 +268,7 @@ function getChannelsByName(vName, vCaseMatching) {
     case 1:
         for (i = 0; i < vChannelList.numChannels; i++) {
             var vChannel = vChannelList.getChannel(i);
-            var _0xD9D8 = vChannel.label.trim();
+            var vChannelLabelTrimmed = vChannel.label.trim();
             if (channlName.indexOf(vName) > -1) {
                 vChannelOut.push(vChannel)
             }
