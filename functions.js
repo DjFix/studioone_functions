@@ -1,9 +1,16 @@
-function alert(_0xD83E) {
-    Host.GUI.alert(_0xD83E.toString())
+/*   MESSAGING   */
+
+// alert (value)
+// Common alert box, string formatting is performed in the function
+function alert(vValue) {
+    Host.GUI.alert(vValue.toString())
 }
 
-function print(_0xD83E) {
-    Host.Console.writeLine(_0xD83E.toString())
+// print (value)
+// Write to console, string formatting is performed in the function
+// Outputs to the Studio One message window
+function print(vValue) {
+    Host.Console.writeLine(vValue.toString())
 }
 
 function getDateTime() {
