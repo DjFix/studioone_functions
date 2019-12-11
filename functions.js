@@ -86,8 +86,8 @@ function getTracks(vSelected) {
 // getTracksByName (string, [integer])
 // Returns an array of tracks where the track name contains the string.
 // Optional case sensitivy matching: 0 or none = no case sensitivity, 1 = case sensitive
-function getTracksByName(_0xDA01, _0xD9AF) {
-    if (_0xDA01.trim() == 0) {
+function getTracksByName(vName, _0xD9AF) {
+    if (vName.trim() == 0) {
         return
     };
     if (_0xD9AF != 0 && _0xD9AF != 1) {
@@ -100,7 +100,7 @@ function getTracksByName(_0xDA01, _0xD9AF) {
         for (i = 0; i < _0xDB49.numTracks; i++) {
             var vTrack = _0xDB49.getTrack(i);
             var _0xDB9B = vTrack.name.trim();
-            if (_0xDB9B.toUpperCase().indexOf(_0xDA01.toUpperCase()) > -1 && _0xDB72.indexOf(vTrack) == -1) {
+            if (_0xDB9B.toUpperCase().indexOf(vName.toUpperCase()) > -1 && _0xDB72.indexOf(vTrack) == -1) {
                 _0xDB72.push(vTrack)
             }
         };
@@ -110,7 +110,7 @@ function getTracksByName(_0xDA01, _0xD9AF) {
         for (i = 0; i < _0xDB49.numTracks; i++) {
             var vTrack = _0xDB49.getTrack(i);
             var _0xDB9B = vTrack.name.trim();
-            if (_0xDB9B.indexOf(_0xDA01) > -1 && _0xDB72.indexOf(vTrack) == -1) {
+            if (_0xDB9B.indexOf(vName) > -1 && _0xDB72.indexOf(vTrack) == -1) {
                 _0xDB72.push(vTrack)
             }
         };
@@ -151,8 +151,8 @@ function renameTracks(_0xDE7D, _0xDE54) {
         if (vTrack.name == null || vTrack.name == undefined) {
             continue
         };
-        var _0xDA01 = vTrack.name.toString();
-        var _0xDE2B = _0xDA01.replace(_0xDE7D, _0xDE54);
+        var vName = vTrack.name.toString();
+        var _0xDE2B = vName.replace(_0xDE7D, _0xDE54);
         _0xDE02.renameEvent(vTrack, _0xDE2B.toString())
     }
 }
@@ -222,8 +222,8 @@ function getChannels(vSelected) {
 // getChannelsByName (name [string], caseMatching [bool])
 // Returns an array of mixer channels where the channel name contains the string.
 // Optional case sensitivy matching: 0 or none = no case sensitivity, 1 = case sensitive
-function getChannelsByName(_0xDA01, _0xD9AF) {
-    if (_0xDA01.trim() == 0) {
+function getChannelsByName(vName, _0xD9AF) {
+    if (vName.trim() == 0) {
         return
     };
     if (_0xD9AF != 0 && _0xD9AF != 1) {
@@ -236,7 +236,7 @@ function getChannelsByName(_0xDA01, _0xD9AF) {
         for (i = 0; i < _0xD890.numChannels; i++) {
             var _0xD867 = _0xD890.getChannel(i);
             var _0xD9D8 = _0xD867.label.trim();
-            if (_0xD9D8.toUpperCase().indexOf(_0xDA01.toUpperCase()) > -1) {
+            if (_0xD9D8.toUpperCase().indexOf(vName.toUpperCase()) > -1) {
                 _0xD934.push(_0xD867)
             }
         };
@@ -246,7 +246,7 @@ function getChannelsByName(_0xDA01, _0xD9AF) {
         for (i = 0; i < _0xD890.numChannels; i++) {
             var _0xD867 = _0xD890.getChannel(i);
             var _0xD9D8 = _0xD867.label.trim();
-            if (channlName.indexOf(_0xDA01) > -1) {
+            if (channlName.indexOf(vName) > -1) {
                 _0xD934.push(_0xD867)
             }
         };
