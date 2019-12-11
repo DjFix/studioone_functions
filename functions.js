@@ -371,12 +371,12 @@ function loadCubasePatchFile(vDebug) {
     vFileSelector.runOpen();
     var vPath = vFileSelector.getPath();
     var _0xDD87 = [];
-    var _0xDDB0 = Host.IO.openTextFile(vPath);
-    if (_0xDDB0) {
+    var vFile = Host.IO.openTextFile(vPath);
+    if (vFile) {
         var _0xDC68 = 0;
         var _0xDBC4 = "";
-        while (!_0xDDB0.endOfStream) {
-            var _0xDC91 = _0xDDB0.readLine().toString();
+        while (!vFile.endOfStream) {
+            var _0xDC91 = vFile.readLine().toString();
             if (_0xDC91.trim() == "" || _0xDC91 == null) {
                 continue
             };
@@ -405,7 +405,7 @@ function loadCubasePatchFile(vDebug) {
                 continue
             }
         };
-        _0xDDB0.close();
+        vFile.close();
         if (vDebug == 1) {
             for (_0xDC68 = 0; _0xDC68 < _0xDD87.length; _0xDC68++) {
                 print(_0xDD87[_0xDC68])
