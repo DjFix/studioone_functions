@@ -219,6 +219,9 @@ function getChannels(vSelected) {
     }
 }
 
+// getChannelsByName (name [string], caseMatching [bool])
+// Returns an array of mixer channels where the channel name contains the string.
+// Optional case sensitivy matching: 0 or none = no case sensitivity, 1 = case sensitive
 function getChannelsByName(_0xDA01, _0xD9AF) {
     if (_0xDA01.trim() == 0) {
         return
