@@ -39,8 +39,8 @@ function getAllPropertyNames(_0xD8B9) {
 // selectTrack (track [object])
 // Use this to optionally select tracks when iterating when necessary
 function selectTrack(vTrack) {
-    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
-    _0xDB49.selectTrack(vTrack)
+    var vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    vTrackList.selectTrack(vTrack)
 }
 
 // muteTrack:
@@ -70,12 +70,12 @@ function getTracks(vSelected) {
     if (vSelected != 0 && vSelected != 1) {
         vSelected = 0
     };
-    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    var vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
     var _0xDB72 = [];
     switch (vSelected) {
     case 0:
-        for (i = 0; i < _0xDB49.numTracks; i++) {
-            var vTrack = _0xDB49.getTrack(i);
+        for (i = 0; i < vTrackList.numTracks; i++) {
+            var vTrack = vTrackList.getTrack(i);
             if (_0xDB72.indexOf(vTrack) == -1) {
                 _0xDB72.push(vTrack)
             }
@@ -83,8 +83,8 @@ function getTracks(vSelected) {
         return _0xDB72;
         break;
     case 1:
-        for (i = 0; i < _0xDB49.numSelectedTracks; i++) {
-            var vTrack = _0xDB49.getSelectedTrack(i);
+        for (i = 0; i < vTrackList.numSelectedTracks; i++) {
+            var vTrack = vTrackList.getSelectedTrack(i);
             if (_0xDB72.indexOf(vTrack) == -1) {
                 _0xDB72.push(vTrack)
             }
@@ -104,12 +104,12 @@ function getTracksByName(vName, vCaseMatching) {
     if (vCaseMatching != 0 && vCaseMatching != 1) {
         (vCaseMatching = 0)
     };
-    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    var vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
     var _0xDB72 = [];
     switch (vCaseMatching) {
     case 0:
-        for (i = 0; i < _0xDB49.numTracks; i++) {
-            var vTrack = _0xDB49.getTrack(i);
+        for (i = 0; i < vTrackList.numTracks; i++) {
+            var vTrack = vTrackList.getTrack(i);
             var _0xDB9B = vTrack.name.trim();
             if (_0xDB9B.toUpperCase().indexOf(vName.toUpperCase()) > -1 && _0xDB72.indexOf(vTrack) == -1) {
                 _0xDB72.push(vTrack)
@@ -118,8 +118,8 @@ function getTracksByName(vName, vCaseMatching) {
         return _0xDB72;
         break;
     case 1:
-        for (i = 0; i < _0xDB49.numTracks; i++) {
-            var vTrack = _0xDB49.getTrack(i);
+        for (i = 0; i < vTrackList.numTracks; i++) {
+            var vTrack = vTrackList.getTrack(i);
             var _0xDB9B = vTrack.name.trim();
             if (_0xDB9B.indexOf(vName) > -1 && _0xDB72.indexOf(vTrack) == -1) {
                 _0xDB72.push(vTrack)
@@ -149,13 +149,13 @@ function setPan(vTrack, vValue) {
 // renameTracks (find [string], replace [string])
 // Replace parts of all track names. Case sensitive matching (search string, replacment string)
 function renameTracks(_0xDE7D, _0xDE54) {
-    let _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
-    let _0xDE02 = _0xDB49.getTrack(0).getRoot().createFunctions();
+    let vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    let _0xDE02 = vTrackList.getTrack(0).getRoot().createFunctions();
     if (_0xDE02 == undefined) {
         return
     };
-    for (i = 0; i < _0xDB49.numTracks; i++) {
-        var vTrack = _0xDB49.getTrack(i);
+    for (i = 0; i < vTrackList.numTracks; i++) {
+        var vTrack = vTrackList.getTrack(i);
         if (vTrack.name == null || vTrack.name == undefined) {
             continue
         };
@@ -168,8 +168,8 @@ function renameTracks(_0xDE7D, _0xDE54) {
 // setTrackColor (track [object], color [hex])
 // Sets a track to a hex color, # char irrelevant
 function setTrackColor(vTrack, vColor) {
-    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
-    var _0xDE02 = _0xDB49.getTrack(0).getRoot().createFunctions();
+    var vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    var _0xDE02 = vTrackList.getTrack(0).getRoot().createFunctions();
     if (_0xDE02 == undefined) {
         return
     };
@@ -337,11 +337,11 @@ function setChannelColor(vChannel, vColor) {
 // setProgram (bank [integer], program [integer])
 // Set bank and program for an external instrument
 function setProgram(vBank, vProgram) {
-    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
-    if (_0xDB49.getSelectedTrack(0) == undefined || _0xDB49.getSelectedTrack(0).mediaType != "Music") {
+    var vTrackList = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    if (vTrackList.getSelectedTrack(0) == undefined || vTrackList.getSelectedTrack(0).mediaType != "Music") {
         return
     };
-    var _0xDF9C = _0xDB49.getSelectedTrack(0).channel.name;
+    var _0xDF9C = vTrackList.getSelectedTrack(0).channel.name;
     if (_0xDF9C == undefined) {
         return
     };
