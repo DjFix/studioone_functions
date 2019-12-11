@@ -132,9 +132,9 @@ function getPan(vTrack) {
 
 // setPan (track [object], value [string])
 // Sets the pan value for a track's channel if any setPan(track, 'L45')
-function setPan(vTrack, _0xDACE) {
+function setPan(vTrack, vValue) {
     if (vTrack.channel.findParameter("pan") != undefined) {
-        return vTrack.channel.findParameter("pan").string = _0xDACE
+        return vTrack.channel.findParameter("pan").string = vValue
     }
 }
 
@@ -168,10 +168,10 @@ function setTrackColor(vTrack, _0xDA7C) {
 }
 
 function getColorVal(_0xDA7C) {
-    let _0xDACE = parseInt(_0xDA7C, 16);
-    let _0xDAA5 = (_0xDACE >> 16) & 0xff;
-    let _0xDA53 = (_0xDACE >> 8) & 0xff;
-    let _0xDA2A = _0xDACE & 0xff;
+    let vValue = parseInt(_0xDA7C, 16);
+    let _0xDAA5 = (vValue >> 16) & 0xff;
+    let _0xDA53 = (vValue >> 8) & 0xff;
+    let _0xDA2A = vValue & 0xff;
     return ((_0xDA2A << 16) | (_0xDA53 << 8) | _0xDAA5) | 0xff000000
 }
 
@@ -253,8 +253,8 @@ function getFader(_0xD867) {
     return _0xD867.findParameter("volume").string
 }
 
-function setFader(_0xD867, _0xDACE) {
-    newValue = (Math.pow(10, parseFloat(_0xDACE / 20)));
+function setFader(_0xD867, vValue) {
+    newValue = (Math.pow(10, parseFloat(vValue / 20)));
     if (_0xD867.findParameter("volume") == undefined) {
         return
     };
@@ -304,9 +304,9 @@ function resetInputs(_0xDECF) {
     }
 }
 
-function setMasterFader(_0xDACE) {
+function setMasterFader(vValue) {
     var _0xDF4A = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/AudioMixer");
-    _0xDF4A.findParameter("masterVolume").string = _0xDACE.toString()
+    _0xDF4A.findParameter("masterVolume").string = vValue.toString()
 }
 
 function setChannelColor(_0xD867, _0xDF21) {
@@ -316,7 +316,7 @@ function setChannelColor(_0xD867, _0xDF21) {
     _0xD867.findParameter("color").string = _0xDF21
 }
 
-function loadCubasePatchFile(_0xDACE) {
+function loadCubasePatchFile(vValue) {
     var _0xDC3F = Host.Classes.createInstance("CCL:FileSelector");
     var _0xDDD9 = {
         description: ("Cubase Patch Script"),
@@ -362,7 +362,7 @@ function loadCubasePatchFile(_0xDACE) {
             }
         };
         _0xDDB0.close();
-        if (_0xDACE == 1) {
+        if (vValue == 1) {
             for (_0xDC68 = 0; _0xDC68 < _0xDD87.length; _0xDC68++) {
                 print(_0xDD87[_0xDC68])
             }
