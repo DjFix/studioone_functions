@@ -66,6 +66,19 @@ function soloTrack(vTrack) {
 // getTracks (selected [bool])
 // Returns an array of arrange tracks
 // Argument is optional: None or 0 = all tracks, 1 = selected tracks
+/*
+```
+var tracks = getTracks(1)  // selected tracks
+{
+    for (i = 0; i < tracks.length; i++)
+    {
+       var track = tracks[i];
+       setTrackColor(tracks[i],"#32c382") // green
+       print(track.name);  // print to console
+    }
+}
+```
+*/
 function getTracks(vSelected) {
     if (vSelected != 0 && vSelected != 1) {
         vSelected = 0
@@ -191,6 +204,22 @@ function getColorVal(vColor) {
 // getChannels (selected [bool])
 // Returns an array of mixer channels
 // Argument is optional: None or 0 = all Channels, 1 = selected channels
+/*
+```
+var channels = getChannels();  // all channels
+{
+    for (i = 0; i < channels.length; i++)
+    {
+        var channel = channels[i];
+        setFader(channel,-6.0)          // set to -6dB
+        if (channel.pan != undefined)  // i.e, VCA's don't have pans for example
+        {
+            print(channel.pan);  // print to console
+        }
+    }
+}
+```
+*/
 function getChannels(vSelected) {
     if (vSelected != 0 && vSelected != 1) {
         vSelected = 0
@@ -257,6 +286,21 @@ function getFader(vChannel) {
 
 // setFader (channel [object], level [integer])
 // Sets a fader to a specific dB value. -144 to 10
+/*
+```
+// set all faders to -3
+var channels = getChannels();  // all channels
+{
+    var level = -3;
+    var goingUp = true;
+    for (i = 0; i < channels.length; i++)
+    {
+        var channel = channels[i];
+        setFader(channel, level)
+    }
+}
+```
+*/
 function setFader(vChannel, vLevel) {
     newValue = (Math.pow(10, parseFloat(vLevel / 20)));
     if (vChannel.findParameter("volume") == undefined) {
