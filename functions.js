@@ -119,6 +119,9 @@ function getTracksByName(_0xDA01, _0xD9AF) {
     }
 }
 
+
+// getPan (track [object])
+// Returns the pan value from a track's channel if any
 function getPan(vTrack) {
     if (vTrack.channel.findParameter("pan") != undefined) {
         return vTrack.channel.findParameter("pan").string.replace("<", "").replace(">", "")
