@@ -29,23 +29,23 @@ function getAllPropertyNames(_0xD8B9) {
     Host.GUI.alert(String(_0xD90B))
 }
 
-function selectTrack(_0xDB20) {
+function selectTrack(vTrack) {
     var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
-    _0xDB49.selectTrack(_0xDB20)
+    _0xDB49.selectTrack(vTrack)
 }
 
-function muteTrack(_0xDB20) {
-    if (_0xDB20.channel != undefined) {
+function muteTrack(vTrack) {
+    if (vTrack.channel != undefined) {
         try {
-            _0xDB20.channel.mute = 1
+            vTrack.channel.mute = 1
         } catch (err) {}
     }
 }
 
-function soloTrack(_0xDB20) {
-    if (_0xDB20.channel != undefined) {
+function soloTrack(vTrack) {
+    if (vTrack.channel != undefined) {
         try {
-            _0xDB20.channel.solo = 1
+            vTrack.channel.solo = 1
         } catch (err) {}
     }
 }
@@ -59,18 +59,18 @@ function getTracks(_0xD986) {
     switch (_0xD986) {
     case 0:
         for (i = 0; i < _0xDB49.numTracks; i++) {
-            var _0xDB20 = _0xDB49.getTrack(i);
-            if (_0xDB72.indexOf(_0xDB20) == -1) {
-                _0xDB72.push(_0xDB20)
+            var vTrack = _0xDB49.getTrack(i);
+            if (_0xDB72.indexOf(vTrack) == -1) {
+                _0xDB72.push(vTrack)
             }
         };
         return _0xDB72;
         break;
     case 1:
         for (i = 0; i < _0xDB49.numSelectedTracks; i++) {
-            var _0xDB20 = _0xDB49.getSelectedTrack(i);
-            if (_0xDB72.indexOf(_0xDB20) == -1) {
-                _0xDB72.push(_0xDB20)
+            var vTrack = _0xDB49.getSelectedTrack(i);
+            if (_0xDB72.indexOf(vTrack) == -1) {
+                _0xDB72.push(vTrack)
             }
         };
         return _0xDB72;
@@ -90,20 +90,20 @@ function getTracksByName(_0xDA01, _0xD9AF) {
     switch (_0xD9AF) {
     case 0:
         for (i = 0; i < _0xDB49.numTracks; i++) {
-            var _0xDB20 = _0xDB49.getTrack(i);
-            var _0xDB9B = _0xDB20.name.trim();
-            if (_0xDB9B.toUpperCase().indexOf(_0xDA01.toUpperCase()) > -1 && _0xDB72.indexOf(_0xDB20) == -1) {
-                _0xDB72.push(_0xDB20)
+            var vTrack = _0xDB49.getTrack(i);
+            var _0xDB9B = vTrack.name.trim();
+            if (_0xDB9B.toUpperCase().indexOf(_0xDA01.toUpperCase()) > -1 && _0xDB72.indexOf(vTrack) == -1) {
+                _0xDB72.push(vTrack)
             }
         };
         return _0xDB72;
         break;
     case 1:
         for (i = 0; i < _0xDB49.numTracks; i++) {
-            var _0xDB20 = _0xDB49.getTrack(i);
-            var _0xDB9B = _0xDB20.name.trim();
-            if (_0xDB9B.indexOf(_0xDA01) > -1 && _0xDB72.indexOf(_0xDB20) == -1) {
-                _0xDB72.push(_0xDB20)
+            var vTrack = _0xDB49.getTrack(i);
+            var _0xDB9B = vTrack.name.trim();
+            if (_0xDB9B.indexOf(_0xDA01) > -1 && _0xDB72.indexOf(vTrack) == -1) {
+                _0xDB72.push(vTrack)
             }
         };
         return _0xDB72;
@@ -111,15 +111,15 @@ function getTracksByName(_0xDA01, _0xD9AF) {
     }
 }
 
-function getPan(_0xDB20) {
-    if (_0xDB20.channel.findParameter("pan") != undefined) {
-        return _0xDB20.channel.findParameter("pan").string.replace("<", "").replace(">", "")
+function getPan(vTrack) {
+    if (vTrack.channel.findParameter("pan") != undefined) {
+        return vTrack.channel.findParameter("pan").string.replace("<", "").replace(">", "")
     }
 }
 
-function setPan(_0xDB20, _0xDACE) {
-    if (_0xDB20.channel.findParameter("pan") != undefined) {
-        return _0xDB20.channel.findParameter("pan").string = _0xDACE
+function setPan(vTrack, _0xDACE) {
+    if (vTrack.channel.findParameter("pan") != undefined) {
+        return vTrack.channel.findParameter("pan").string = _0xDACE
     }
 }
 
@@ -130,24 +130,24 @@ function renameTracks(_0xDE7D, _0xDE54) {
         return
     };
     for (i = 0; i < _0xDB49.numTracks; i++) {
-        var _0xDB20 = _0xDB49.getTrack(i);
-        if (_0xDB20.name == null || _0xDB20.name == undefined) {
+        var vTrack = _0xDB49.getTrack(i);
+        if (vTrack.name == null || vTrack.name == undefined) {
             continue
         };
-        var _0xDA01 = _0xDB20.name.toString();
+        var _0xDA01 = vTrack.name.toString();
         var _0xDE2B = _0xDA01.replace(_0xDE7D, _0xDE54);
-        _0xDE02.renameEvent(_0xDB20, _0xDE2B.toString())
+        _0xDE02.renameEvent(vTrack, _0xDE2B.toString())
     }
 }
 
-function setTrackColor(_0xDB20, _0xDA7C) {
+function setTrackColor(vTrack, _0xDA7C) {
     var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
     var _0xDE02 = _0xDB49.getTrack(0).getRoot().createFunctions();
     if (_0xDE02 == undefined) {
         return
     };
     var _0xE017 = getColorVal(_0xDA7C.replace("#", ""));
-    _0xDE02.colorizeEvent(_0xDB20, _0xE017)
+    _0xDE02.colorizeEvent(vTrack, _0xE017)
 }
 
 function getColorVal(_0xDA7C) {
