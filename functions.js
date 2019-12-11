@@ -234,20 +234,20 @@ function getChannelsByName(vName, vCaseMatching) {
     switch (vCaseMatching) {
     case 0:
         for (i = 0; i < _0xD890.numChannels; i++) {
-            var _0xD867 = _0xD890.getChannel(i);
-            var _0xD9D8 = _0xD867.label.trim();
+            var vChannel = _0xD890.getChannel(i);
+            var _0xD9D8 = vChannel.label.trim();
             if (_0xD9D8.toUpperCase().indexOf(vName.toUpperCase()) > -1) {
-                _0xD934.push(_0xD867)
+                _0xD934.push(vChannel)
             }
         };
         return _0xD934;
         break;
     case 1:
         for (i = 0; i < _0xD890.numChannels; i++) {
-            var _0xD867 = _0xD890.getChannel(i);
-            var _0xD9D8 = _0xD867.label.trim();
+            var vChannel = _0xD890.getChannel(i);
+            var _0xD9D8 = vChannel.label.trim();
             if (channlName.indexOf(vName) > -1) {
-                _0xD934.push(_0xD867)
+                _0xD934.push(vChannel)
             }
         };
         return tracks;
@@ -255,24 +255,26 @@ function getChannelsByName(vName, vCaseMatching) {
     }
 }
 
-function getFader(_0xD867) {
-    return _0xD867.findParameter("volume").string
+// getFader (channel [object])
+// Returns a fader level in dB.
+function getFader(vChannel) {
+    return vChannel.findParameter("volume").string
 }
 
-function setFader(_0xD867, vValue) {
+function setFader(vChannel, vValue) {
     newValue = (Math.pow(10, parseFloat(vValue / 20)));
-    if (_0xD867.findParameter("volume") == undefined) {
+    if (vChannel.findParameter("volume") == undefined) {
         return
     };
-    _0xD867.findParameter("volume").setValue(newValue), true
+    vChannel.findParameter("volume").setValue(newValue), true
 }
 
 function centerPans() {
     var _0xD890 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
     for (i = 0; i < _0xD890.numSelectedChannels; i++) {
-        var _0xD867 = _0xD890.getSelectedChannel(i);
-        if (_0xD867.pan != undefined) {
-            _0xD867.pan = 0.5
+        var vChannel = _0xD890.getSelectedChannel(i);
+        if (vChannel.pan != undefined) {
+            vChannel.pan = 0.5
         }
     }
 }
@@ -295,16 +297,16 @@ function resetInputs(_0xDECF) {
     };
     if (_0xDECF == 1) {
         for (i = 0; i < _0xDEF8.length; i++) {
-            var _0xD867 = _0xDEF8[i];
-            if (_0xD867.find("InputFX") != undefined) {
-                _0xD867.find("InputFX").findParameter("gain").setValue(0, true)
+            var vChannel = _0xDEF8[i];
+            if (vChannel.find("InputFX") != undefined) {
+                vChannel.find("InputFX").findParameter("gain").setValue(0, true)
             }
         }
     } else {
         for (i = 0; i < _0xD890.numChannels; i++) {
-            var _0xD867 = _0xD890.getChannel(i);
-            if (_0xD867.find("InputFX") != undefined) {
-                _0xD867.find("InputFX").findParameter("gain").setValue(0, true)
+            var vChannel = _0xD890.getChannel(i);
+            if (vChannel.find("InputFX") != undefined) {
+                vChannel.find("InputFX").findParameter("gain").setValue(0, true)
             }
         }
     }
@@ -315,11 +317,11 @@ function setMasterFader(vValue) {
     _0xDF4A.findParameter("masterVolume").string = vValue.toString()
 }
 
-function setChannelColor(_0xD867, _0xDF21) {
+function setChannelColor(vChannel, _0xDF21) {
     if (_0xDF21.indexOf("#") == -1) {
         _0xDF21 = "#" + _0xDF21
     };
-    _0xD867.findParameter("color").string = _0xDF21
+    vChannel.findParameter("color").string = _0xDF21
 }
 
 function loadCubasePatchFile(vValue) {
