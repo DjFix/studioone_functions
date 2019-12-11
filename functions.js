@@ -123,8 +123,8 @@ function getTracksByName(vName, vCaseMatching) {
     case 0:
         for (i = 0; i < vTrackList.numTracks; i++) {
             var vTrack = vTrackList.getTrack(i);
-            var _0xDB9B = vTrack.name.trim();
-            if (_0xDB9B.toUpperCase().indexOf(vName.toUpperCase()) > -1 && vOutTrack.indexOf(vTrack) == -1) {
+            var vTrackNameTrimed = vTrack.name.trim();
+            if (vTrackNameTrimed.toUpperCase().indexOf(vName.toUpperCase()) > -1 && vOutTrack.indexOf(vTrack) == -1) {
                 vOutTrack.push(vTrack)
             }
         };
@@ -133,8 +133,8 @@ function getTracksByName(vName, vCaseMatching) {
     case 1:
         for (i = 0; i < vTrackList.numTracks; i++) {
             var vTrack = vTrackList.getTrack(i);
-            var _0xDB9B = vTrack.name.trim();
-            if (_0xDB9B.indexOf(vName) > -1 && vOutTrack.indexOf(vTrack) == -1) {
+            var vTrackNameTrimed = vTrack.name.trim();
+            if (vTrackNameTrimed.indexOf(vName) > -1 && vOutTrack.indexOf(vTrack) == -1) {
                 vOutTrack.push(vTrack)
             }
         };
