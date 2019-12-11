@@ -418,7 +418,7 @@ function loadCubasePatchFile(vDebug) {
     var vFile = Host.IO.openTextFile(vPath);
     if (vFile) {
         var idx = 0;
-        var _0xDBC4 = "";
+        var vGroupName = "";
         while (!vFile.endOfStream) {
             var vTextLine = vFile.readLine().toString();
             if (vTextLine.trim() == "" || vTextLine == null) {
@@ -433,18 +433,18 @@ function loadCubasePatchFile(vDebug) {
             if (vTextLine.indexOf("[g") > -1) {
                 vTextLine = vTextLine.replace("\t", "");
                 var _0xDC16 = vTextLine.split("]");
-                _0xDBC4 = _0xDC16[1].trim();
+                vGroupName = _0xDC16[1].trim();
                 continue
             };
             if (vTextLine.indexOf("[p") > -1 && vTextLine.indexOf(",") > -1) {
                 vTextLine = vTextLine.replace("\t", "");
                 var _0xDC16 = vTextLine.split("]");
-                var _0xDD5E = _0xDC16[1].trim();
-                var _0xDD35 = _0xDC16[0].split(",");
-                var _0xDCE3 = _0xDD35[2];
-                var _0xDCBA = _0xDD35[3];
-                var _0xDBED = (_0xDCE3 * 128) + _0xDCBA;
-                vOutArray[idx] = (_0xDD5E + "," + _0xDD35[1] + "," + _0xDBED + "," + _0xDBC4);
+                var vProgramName = _0xDC16[1].trim();
+                var vProgramNumber = _0xDC16[0].split(",");
+                var _0xDCE3 = vProgramNumber[2];
+                var _0xDCBA = vProgramNumber[3];
+                var vBankNumber = (_0xDCE3 * 128) + _0xDCBA;
+                vOutArray[idx] = (vProgramName + "," + vProgramNumber[1] + "," + vBankNumber + "," + vGroupName);
                 idx++;
                 continue
             }
