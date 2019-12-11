@@ -1,1 +1,346 @@
-var _$_d4db=["\x74\x6F\x53\x74\x72\x69\x6E\x67","\x61\x6C\x65\x72\x74","\x47\x55\x49","\x77\x72\x69\x74\x65\x4C\x69\x6E\x65","\x43\x6F\x6E\x73\x6F\x6C\x65","\x6E\x6F\x77","\x67\x65\x74\x4D\x6F\x6E\x74\x68","\x2F","\x67\x65\x74\x44\x61\x74\x65","\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72","\x20\x28","\x67\x65\x74\x48\x6F\x75\x72\x73","\x5F","\x67\x65\x74\x4D\x69\x6E\x75\x74\x65\x73","\x67\x65\x74\x53\x65\x63\x6F\x6E\x64\x73","\x29","\x67\x65\x74\x4F\x77\x6E\x50\x72\x6F\x70\x65\x72\x74\x79\x4E\x61\x6D\x65\x73","\x63\x6F\x6E\x63\x61\x74","\x67\x65\x74\x50\x72\x6F\x74\x6F\x74\x79\x70\x65\x4F\x66","\x0D\x0A","\x6A\x6F\x69\x6E","\x6D\x61\x69\x6E\x54\x72\x61\x63\x6B\x4C\x69\x73\x74","\x3A\x2F\x2F\x68\x6F\x73\x74\x61\x70\x70\x2F\x44\x6F\x63\x75\x6D\x65\x6E\x74\x4D\x61\x6E\x61\x67\x65\x72\x2F\x41\x63\x74\x69\x76\x65\x44\x6F\x63\x75\x6D\x65\x6E\x74\x2F\x54\x72\x61\x63\x6B\x4C\x69\x73\x74","\x67\x65\x74\x4F\x62\x6A\x65\x63\x74\x42\x79\x55\x72\x6C","\x4F\x62\x6A\x65\x63\x74\x73","\x73\x65\x6C\x65\x63\x74\x54\x72\x61\x63\x6B","\x63\x68\x61\x6E\x6E\x65\x6C","\x6D\x75\x74\x65","\x73\x6F\x6C\x6F","\x6E\x75\x6D\x54\x72\x61\x63\x6B\x73","\x67\x65\x74\x54\x72\x61\x63\x6B","\x69\x6E\x64\x65\x78\x4F\x66","\x70\x75\x73\x68","\x6E\x75\x6D\x53\x65\x6C\x65\x63\x74\x65\x64\x54\x72\x61\x63\x6B\x73","\x67\x65\x74\x53\x65\x6C\x65\x63\x74\x65\x64\x54\x72\x61\x63\x6B","\x74\x72\x69\x6D","\x6E\x61\x6D\x65","\x74\x6F\x55\x70\x70\x65\x72\x43\x61\x73\x65","\x70\x61\x6E","\x66\x69\x6E\x64\x50\x61\x72\x61\x6D\x65\x74\x65\x72","\x3E","","\x72\x65\x70\x6C\x61\x63\x65","\x3C","\x73\x74\x72\x69\x6E\x67","\x63\x72\x65\x61\x74\x65\x46\x75\x6E\x63\x74\x69\x6F\x6E\x73","\x67\x65\x74\x52\x6F\x6F\x74","\x72\x65\x6E\x61\x6D\x65\x45\x76\x65\x6E\x74","\x23","\x63\x6F\x6C\x6F\x72\x69\x7A\x65\x45\x76\x65\x6E\x74","\x6D\x65\x64\x69\x61\x54\x79\x70\x65","\x4D\x75\x73\x69\x63","\x3A\x2F\x2F\x68\x6F\x73\x74\x61\x70\x70\x2F\x44\x6F\x63\x75\x6D\x65\x6E\x74\x4D\x61\x6E\x61\x67\x65\x72\x2F\x41\x63\x74\x69\x76\x65\x44\x6F\x63\x75\x6D\x65\x6E\x74\x2F\x45\x6E\x76\x69\x72\x6F\x6E\x6D\x65\x6E\x74\x2F\x4D\x75\x73\x69\x63\x54\x72\x61\x63\x6B\x44\x65\x76\x69\x63\x65","\x2F\x43\x68\x61\x6E\x6E\x65\x6C\x73\x2F\x4D\x75\x73\x69\x63\x54\x72\x61\x63\x6B\x2F","\x2F\x50\x72\x6F\x67\x72\x61\x6D\x73","\x73\x65\x74\x56\x61\x6C\x75\x65","\x70\x72\x6F\x67\x72\x61\x6D\x45\x6E\x61\x62\x6C\x65\x64","\x62\x61\x6E\x6B\x4E\x75\x6D\x62\x65\x72","\x70\x72\x6F\x67\x72\x61\x6D\x4E\x75\x6D\x62\x65\x72","\x67\x65\x74\x43\x68\x61\x6E\x6E\x65\x6C\x4C\x69\x73\x74","\x3A\x2F\x2F\x68\x6F\x73\x74\x61\x70\x70\x2F\x44\x6F\x63\x75\x6D\x65\x6E\x74\x4D\x61\x6E\x61\x67\x65\x72\x2F\x41\x63\x74\x69\x76\x65\x44\x6F\x63\x75\x6D\x65\x6E\x74\x2F\x45\x6E\x76\x69\x72\x6F\x6E\x6D\x65\x6E\x74\x2F\x4D\x69\x78\x65\x72\x43\x6F\x6E\x73\x6F\x6C\x65","\x6E\x75\x6D\x43\x68\x61\x6E\x6E\x65\x6C\x73","\x67\x65\x74\x43\x68\x61\x6E\x6E\x65\x6C","\x6E\x75\x6D\x53\x65\x6C\x65\x63\x74\x65\x64\x43\x68\x61\x6E\x6E\x65\x6C\x73","\x67\x65\x74\x53\x65\x6C\x65\x63\x74\x65\x64\x43\x68\x61\x6E\x6E\x65\x6C","\x6C\x61\x62\x65\x6C","\x76\x6F\x6C\x75\x6D\x65","\x70\x6F\x77","\x73\x75\x62\x73\x74\x72\x69\x6E\x67","\x53\x74\x75\x64\x69\x6F\x20\x4F\x6E\x65","\x76\x61\x6C\x75\x65","\x61\x70\x70\x4E\x61\x6D\x65\x41\x6E\x64\x56\x65\x72\x73\x69\x6F\x6E","\x3A\x2F\x2F\x73\x74\x75\x64\x69\x6F\x61\x70\x70\x2F\x41\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E","\x54\x68\x69\x73\x20\x66\x75\x6E\x63\x74\x69\x6F\x6E\x20\x72\x65\x71\x75\x69\x72\x65\x73\x20\x53\x74\x75\x64\x69\x6F\x20\x4F\x6E\x65\x20\x34\x2E\x35\x20\x6F\x72\x20\x67\x72\x65\x61\x74\x65\x72\x2E","\x73\x65\x6C\x65\x63\x74\x65\x64","\x6C\x65\x6E\x67\x74\x68","\x49\x6E\x70\x75\x74\x46\x58","\x66\x69\x6E\x64","\x67\x61\x69\x6E","\x3A\x2F\x2F\x68\x6F\x73\x74\x61\x70\x70\x2F\x44\x6F\x63\x75\x6D\x65\x6E\x74\x4D\x61\x6E\x61\x67\x65\x72\x2F\x41\x63\x74\x69\x76\x65\x44\x6F\x63\x75\x6D\x65\x6E\x74\x2F\x45\x6E\x76\x69\x72\x6F\x6E\x6D\x65\x6E\x74\x2F\x41\x75\x64\x69\x6F\x4D\x69\x78\x65\x72","\x6D\x61\x73\x74\x65\x72\x56\x6F\x6C\x75\x6D\x65","\x63\x6F\x6C\x6F\x72","\x43\x43\x4C\x3A\x46\x69\x6C\x65\x53\x65\x6C\x65\x63\x74\x6F\x72","\x63\x72\x65\x61\x74\x65\x49\x6E\x73\x74\x61\x6E\x63\x65","\x43\x6C\x61\x73\x73\x65\x73","\x43\x75\x62\x61\x73\x65\x20\x50\x61\x74\x63\x68\x20\x53\x63\x72\x69\x70\x74","\x74\x78\x74","\x74\x65\x78\x74","\x61\x64\x64\x46\x69\x6C\x74\x65\x72","\x72\x75\x6E\x4F\x70\x65\x6E","\x67\x65\x74\x50\x61\x74\x68","\x6F\x70\x65\x6E\x54\x65\x78\x74\x46\x69\x6C\x65","\x49\x4F","\x72\x65\x61\x64\x4C\x69\x6E\x65","\x5B\x73\x63\x72\x69\x70\x74\x20\x6E\x61\x6D\x65\x5D","\x09","\x5B\x67","\x5D","\x73\x70\x6C\x69\x74","\x5B\x70","\x2C","\x65\x6E\x64\x4F\x66\x53\x74\x72\x65\x61\x6D","\x63\x6C\x6F\x73\x65"];function alert(_0xD83E){Host[_$_d4db[2]][_$_d4db[1]](_0xD83E[_$_d4db[0]]())}function print(_0xD83E){Host[_$_d4db[4]][_$_d4db[3]](_0xD83E[_$_d4db[0]]())}function getDateTime(){var _0xDAF7= new Date(Date[_$_d4db[5]]());return ((_0xDAF7[_$_d4db[6]]()+ 1)+ _$_d4db[7]+ _0xDAF7[_$_d4db[8]]()+ _$_d4db[7]+ _0xDAF7[_$_d4db[9]]()+ _$_d4db[10]+ _0xDAF7[_$_d4db[11]]()+ _$_d4db[12]+ (_0xDAF7[_$_d4db[13]]())+ _$_d4db[12]+ _0xDAF7[_$_d4db[14]]()+ _$_d4db[15])[_$_d4db[0]]()}function getAllPropertyNames(_0xD8B9){var _0xD8E2=[];do{_0xD8E2= _0xD8E2[_$_d4db[17]](Object[_$_d4db[16]](_0xD8B9))}while(_0xD8B9= Object[_$_d4db[18]](_0xD8B9));;var _0xD90B=_0xD8E2[_$_d4db[20]](_$_d4db[19]);Host[_$_d4db[2]][_$_d4db[1]](String(_0xD90B))}function selectTrack(_0xDB20){var _0xDB49=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[22])[_$_d4db[21]];_0xDB49[_$_d4db[25]](_0xDB20)}function muteTrack(_0xDB20){if(_0xDB20[_$_d4db[26]]!= undefined){try{_0xDB20[_$_d4db[26]][_$_d4db[27]]= 1}catch(err){}}}function soloTrack(_0xDB20){if(_0xDB20[_$_d4db[26]]!= undefined){try{_0xDB20[_$_d4db[26]][_$_d4db[28]]= 1}catch(err){}}}function getTracks(_0xD986){if(_0xD986!= 0&& _0xD986!= 1){_0xD986= 0};var _0xDB49=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[22])[_$_d4db[21]];var _0xDB72=[];switch(_0xD986){case 0:for(i= 0;i< _0xDB49[_$_d4db[29]];i++){var _0xDB20=_0xDB49[_$_d4db[30]](i);if(_0xDB72[_$_d4db[31]](_0xDB20)==  -1){_0xDB72[_$_d4db[32]](_0xDB20)}};return _0xDB72;break;case 1:for(i= 0;i< _0xDB49[_$_d4db[33]];i++){var _0xDB20=_0xDB49[_$_d4db[34]](i);if(_0xDB72[_$_d4db[31]](_0xDB20)==  -1){_0xDB72[_$_d4db[32]](_0xDB20)}};return _0xDB72;break}}function getTracksByName(_0xDA01,_0xD9AF){if(_0xDA01[_$_d4db[35]]()== 0){return};if(_0xD9AF!= 0&& _0xD9AF!= 1){(_0xD9AF= 0)};var _0xDB49=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[22])[_$_d4db[21]];var _0xDB72=[];switch(_0xD9AF){case 0:for(i= 0;i< _0xDB49[_$_d4db[29]];i++){var _0xDB20=_0xDB49[_$_d4db[30]](i);var _0xDB9B=_0xDB20[_$_d4db[36]][_$_d4db[35]]();if(_0xDB9B[_$_d4db[37]]()[_$_d4db[31]](_0xDA01[_$_d4db[37]]())>  -1&& _0xDB72[_$_d4db[31]](_0xDB20)==  -1){_0xDB72[_$_d4db[32]](_0xDB20)}};return _0xDB72;break;case 1:for(i= 0;i< _0xDB49[_$_d4db[29]];i++){var _0xDB20=_0xDB49[_$_d4db[30]](i);var _0xDB9B=_0xDB20[_$_d4db[36]][_$_d4db[35]]();if(_0xDB9B[_$_d4db[31]](_0xDA01)>  -1&& _0xDB72[_$_d4db[31]](_0xDB20)==  -1){_0xDB72[_$_d4db[32]](_0xDB20)}};return _0xDB72;break}}function getPan(_0xDB20){if(_0xDB20[_$_d4db[26]][_$_d4db[39]](_$_d4db[38])!= undefined){return _0xDB20[_$_d4db[26]][_$_d4db[39]](_$_d4db[38])[_$_d4db[44]][_$_d4db[42]](_$_d4db[43],_$_d4db[41])[_$_d4db[42]](_$_d4db[40],_$_d4db[41])}}function setPan(_0xDB20,_0xDACE){if(_0xDB20[_$_d4db[26]][_$_d4db[39]](_$_d4db[38])!= undefined){return _0xDB20[_$_d4db[26]][_$_d4db[39]](_$_d4db[38])[_$_d4db[44]]= _0xDACE}}function renameTracks(_0xDE7D,_0xDE54){let _0xDB49=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[22])[_$_d4db[21]];let _0xDE02=_0xDB49[_$_d4db[30]](0)[_$_d4db[46]]()[_$_d4db[45]]();if(_0xDE02== undefined){return};for(i= 0;i< _0xDB49[_$_d4db[29]];i++){var _0xDB20=_0xDB49[_$_d4db[30]](i);if(_0xDB20[_$_d4db[36]]== null|| _0xDB20[_$_d4db[36]]== undefined){continue};var _0xDA01=_0xDB20[_$_d4db[36]][_$_d4db[0]]();var _0xDE2B=_0xDA01[_$_d4db[42]](_0xDE7D,_0xDE54);_0xDE02[_$_d4db[47]](_0xDB20,_0xDE2B[_$_d4db[0]]())}}function setTrackColor(_0xDB20,_0xDA7C){var _0xDB49=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[22])[_$_d4db[21]];var _0xDE02=_0xDB49[_$_d4db[30]](0)[_$_d4db[46]]()[_$_d4db[45]]();if(_0xDE02== undefined){return};var _0xE017=getColorVal(_0xDA7C[_$_d4db[42]](_$_d4db[48],_$_d4db[41]));_0xDE02[_$_d4db[49]](_0xDB20,_0xE017)}function getColorVal(_0xDA7C){let _0xDACE=parseInt(_0xDA7C,16);let _0xDAA5=(_0xDACE>> 16)& 0xff;let _0xDA53=(_0xDACE>> 8)& 0xff;let _0xDA2A=_0xDACE& 0xff;return ((_0xDA2A<< 16)| (_0xDA53<< 8)| _0xDAA5)| 0xff000000}function setProgram(_0xDF73,_0xDFC5){var _0xDB49=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[22])[_$_d4db[21]];if(_0xDB49[_$_d4db[34]](0)== undefined|| _0xDB49[_$_d4db[34]](0)[_$_d4db[50]]!= _$_d4db[51]){return};var _0xDF9C=_0xDB49[_$_d4db[34]](0)[_$_d4db[26]][_$_d4db[36]];if(_0xDF9C== undefined){return};var _0xDFEE=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[52]+ _$_d4db[53]+ _0xDF9C+ _$_d4db[54]);try{_0xDFEE[_$_d4db[39]](_$_d4db[56])[_$_d4db[55]](1,true);_0xDFEE[_$_d4db[39]](_$_d4db[57])[_$_d4db[55]](_0xDF73,true);_0xDFEE[_$_d4db[39]](_$_d4db[58])[_$_d4db[55]](_0xDFC5,true)}catch(err){return}}function getChannels(_0xD986){if(_0xD986!= 0&& _0xD986!= 1){_0xD986= 0};var _0xD95D=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[60])[_$_d4db[59]](1);var _0xD934=[];switch(_0xD986){case 0:for(i= 0;i< _0xD95D[_$_d4db[61]];i++){_0xD934[_$_d4db[32]](_0xD95D[_$_d4db[62]](i))};return _0xD934;break;case 1:for(i= 0;i< _0xD95D[_$_d4db[63]];i++){_0xD934[_$_d4db[32]](_0xD95D[_$_d4db[64]](i))};return _0xD934;break}}function getChannelsByName(_0xDA01,_0xD9AF){if(_0xDA01[_$_d4db[35]]()== 0){return};if(_0xD9AF!= 0&& _0xD9AF!= 1){(_0xD9AF= 0)};var _0xD890=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[60])[_$_d4db[59]](1);var _0xD934=[];switch(_0xD9AF){case 0:for(i= 0;i< _0xD890[_$_d4db[61]];i++){var _0xD867=_0xD890[_$_d4db[62]](i);var _0xD9D8=_0xD867[_$_d4db[65]][_$_d4db[35]]();if(_0xD9D8[_$_d4db[37]]()[_$_d4db[31]](_0xDA01[_$_d4db[37]]())>  -1){_0xD934[_$_d4db[32]](_0xD867)}};return _0xD934;break;case 1:for(i= 0;i< _0xD890[_$_d4db[61]];i++){var _0xD867=_0xD890[_$_d4db[62]](i);var _0xD9D8=_0xD867[_$_d4db[65]][_$_d4db[35]]();if(channlName[_$_d4db[31]](_0xDA01)>  -1){_0xD934[_$_d4db[32]](_0xD867)}};return tracks;break}}function getFader(_0xD867){return _0xD867[_$_d4db[39]](_$_d4db[66])[_$_d4db[44]]}function setFader(_0xD867,_0xDACE){newValue= (Math[_$_d4db[67]](10,parseFloat(_0xDACE/ 20)));if(_0xD867[_$_d4db[39]](_$_d4db[66])== undefined){return};_0xD867[_$_d4db[39]](_$_d4db[66])[_$_d4db[55]](newValue),true}function centerPans(){var _0xD890=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[60])[_$_d4db[59]](1);for(i= 0;i< _0xD890[_$_d4db[63]];i++){var _0xD867=_0xD890[_$_d4db[64]](i);if(_0xD867[_$_d4db[38]]!= undefined){_0xD867[_$_d4db[38]]= 0.5}}}function resetInputs(_0xDECF){var _0xDEA6=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[72])[_$_d4db[39]](_$_d4db[71])[_$_d4db[70]][_$_d4db[42]](_$_d4db[69],_$_d4db[41])[_$_d4db[35]]()[_$_d4db[68]](0,3);if(_0xDEA6< 4.5){Host[_$_d4db[2]][_$_d4db[1]](_$_d4db[73]);return};var _0xD890=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[60])[_$_d4db[59]](1);var _0xDEF8=[];if(_0xD890[_$_d4db[63]]> 0){for(i= 0;i< _0xD890[_$_d4db[63]];i++){_0xDEF8[_$_d4db[32]](_0xD890[_$_d4db[64]](i))};for(i= 0;i< _0xD890[_$_d4db[63]];i++){_0xD890[_$_d4db[64]](i)[_$_d4db[39]](_$_d4db[74])[_$_d4db[55]](0,true)}};if(_0xDECF== 1){for(i= 0;i< _0xDEF8[_$_d4db[75]];i++){var _0xD867=_0xDEF8[i];if(_0xD867[_$_d4db[77]](_$_d4db[76])!= undefined){_0xD867[_$_d4db[77]](_$_d4db[76])[_$_d4db[39]](_$_d4db[78])[_$_d4db[55]](0,true)}}}else {for(i= 0;i< _0xD890[_$_d4db[61]];i++){var _0xD867=_0xD890[_$_d4db[62]](i);if(_0xD867[_$_d4db[77]](_$_d4db[76])!= undefined){_0xD867[_$_d4db[77]](_$_d4db[76])[_$_d4db[39]](_$_d4db[78])[_$_d4db[55]](0,true)}}}}function setMasterFader(_0xDACE){var _0xDF4A=Host[_$_d4db[24]][_$_d4db[23]](_$_d4db[79]);_0xDF4A[_$_d4db[39]](_$_d4db[80])[_$_d4db[44]]= _0xDACE[_$_d4db[0]]()}function setChannelColor(_0xD867,_0xDF21){if(_0xDF21[_$_d4db[31]](_$_d4db[48])==  -1){_0xDF21= _$_d4db[48]+ _0xDF21};_0xD867[_$_d4db[39]](_$_d4db[81])[_$_d4db[44]]= _0xDF21}function loadCubasePatchFile(_0xDACE){var _0xDC3F=Host[_$_d4db[84]][_$_d4db[83]](_$_d4db[82]);var _0xDDD9={description:(_$_d4db[85]),extension:_$_d4db[86],mimetype:_$_d4db[87]};_0xDC3F[_$_d4db[88]](_0xDDD9);_0xDC3F[_$_d4db[89]]();var _0xDD0C=_0xDC3F[_$_d4db[90]]();var _0xDD87=[];var _0xDDB0=Host[_$_d4db[92]][_$_d4db[91]](_0xDD0C);if(_0xDDB0){var _0xDC68=0;var _0xDBC4=_$_d4db[41];while(!_0xDDB0[_$_d4db[101]]){var _0xDC91=_0xDDB0[_$_d4db[93]]()[_$_d4db[0]]();if(_0xDC91[_$_d4db[35]]()== _$_d4db[41]|| _0xDC91== null){continue};if(_0xDC91[_$_d4db[31]](_$_d4db[94])>  -1){_0xDC91= _0xDC91[_$_d4db[42]](_$_d4db[95],_$_d4db[41])[_$_d4db[42]](_$_d4db[94],_$_d4db[41]);_0xDD87[_0xDC68]= _0xDC91[_$_d4db[35]]();_0xDC68++;continue};if(_0xDC91[_$_d4db[31]](_$_d4db[96])>  -1){_0xDC91= _0xDC91[_$_d4db[42]](_$_d4db[95],_$_d4db[41]);var _0xDC16=_0xDC91[_$_d4db[98]](_$_d4db[97]);_0xDBC4= _0xDC16[1][_$_d4db[35]]();continue};if(_0xDC91[_$_d4db[31]](_$_d4db[99])>  -1&& _0xDC91[_$_d4db[31]](_$_d4db[100])>  -1){_0xDC91= _0xDC91[_$_d4db[42]](_$_d4db[95],_$_d4db[41]);var _0xDC16=_0xDC91[_$_d4db[98]](_$_d4db[97]);var _0xDD5E=_0xDC16[1][_$_d4db[35]]();var _0xDD35=_0xDC16[0][_$_d4db[98]](_$_d4db[100]);var _0xDCE3=_0xDD35[2];var _0xDCBA=_0xDD35[3];var _0xDBED=(_0xDCE3* 128)+ _0xDCBA;_0xDD87[_0xDC68]= (_0xDD5E+ _$_d4db[100]+ _0xDD35[1]+ _$_d4db[100]+ _0xDBED+ _$_d4db[100]+ _0xDBC4);_0xDC68++;continue}};_0xDDB0[_$_d4db[102]]();if(_0xDACE== 1){for(_0xDC68= 0;_0xDC68< _0xDD87[_$_d4db[75]];_0xDC68++){print(_0xDD87[_0xDC68])}};return _0xDD87}}
+function alert(_0xD83E) {
+    Host.GUI.alert(_0xD83E.toString())
+}
+
+function print(_0xD83E) {
+    Host.Console.writeLine(_0xD83E.toString())
+}
+
+function getDateTime() {
+    var _0xDAF7 = new Date(Date.now());
+    return ((_0xDAF7.getMonth() + 1) + "/" + _0xDAF7.getDate() + "/" + _0xDAF7.getFullYear() + " (" + _0xDAF7.getHours() + "_" + (_0xDAF7.getMinutes()) + "_" + _0xDAF7.getSeconds() + ")").toString()
+}
+
+function getAllPropertyNames(_0xD8B9) {
+    var _0xD8E2 = [];
+    do {
+        _0xD8E2 = _0xD8E2.concat(Object.getOwnPropertyNames(_0xD8B9))
+    } while (_0xD8B9 = Object.getPrototypeOf(_0xD8B9));;
+    var _0xD90B = _0xD8E2.join("\r\n");
+    Host.GUI.alert(String(_0xD90B))
+}
+
+function selectTrack(_0xDB20) {
+    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    _0xDB49.selectTrack(_0xDB20)
+}
+
+function muteTrack(_0xDB20) {
+    if (_0xDB20.channel != undefined) {
+        try {
+            _0xDB20.channel.mute = 1
+        } catch (err) {}
+    }
+}
+
+function soloTrack(_0xDB20) {
+    if (_0xDB20.channel != undefined) {
+        try {
+            _0xDB20.channel.solo = 1
+        } catch (err) {}
+    }
+}
+
+function getTracks(_0xD986) {
+    if (_0xD986 != 0 && _0xD986 != 1) {
+        _0xD986 = 0
+    };
+    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    var _0xDB72 = [];
+    switch (_0xD986) {
+    case 0:
+        for (i = 0; i < _0xDB49.numTracks; i++) {
+            var _0xDB20 = _0xDB49.getTrack(i);
+            if (_0xDB72.indexOf(_0xDB20) == -1) {
+                _0xDB72.push(_0xDB20)
+            }
+        };
+        return _0xDB72;
+        break;
+    case 1:
+        for (i = 0; i < _0xDB49.numSelectedTracks; i++) {
+            var _0xDB20 = _0xDB49.getSelectedTrack(i);
+            if (_0xDB72.indexOf(_0xDB20) == -1) {
+                _0xDB72.push(_0xDB20)
+            }
+        };
+        return _0xDB72;
+        break
+    }
+}
+
+function getTracksByName(_0xDA01, _0xD9AF) {
+    if (_0xDA01.trim() == 0) {
+        return
+    };
+    if (_0xD9AF != 0 && _0xD9AF != 1) {
+        (_0xD9AF = 0)
+    };
+    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    var _0xDB72 = [];
+    switch (_0xD9AF) {
+    case 0:
+        for (i = 0; i < _0xDB49.numTracks; i++) {
+            var _0xDB20 = _0xDB49.getTrack(i);
+            var _0xDB9B = _0xDB20.name.trim();
+            if (_0xDB9B.toUpperCase().indexOf(_0xDA01.toUpperCase()) > -1 && _0xDB72.indexOf(_0xDB20) == -1) {
+                _0xDB72.push(_0xDB20)
+            }
+        };
+        return _0xDB72;
+        break;
+    case 1:
+        for (i = 0; i < _0xDB49.numTracks; i++) {
+            var _0xDB20 = _0xDB49.getTrack(i);
+            var _0xDB9B = _0xDB20.name.trim();
+            if (_0xDB9B.indexOf(_0xDA01) > -1 && _0xDB72.indexOf(_0xDB20) == -1) {
+                _0xDB72.push(_0xDB20)
+            }
+        };
+        return _0xDB72;
+        break
+    }
+}
+
+function getPan(_0xDB20) {
+    if (_0xDB20.channel.findParameter("pan") != undefined) {
+        return _0xDB20.channel.findParameter("pan").string.replace("<", "").replace(">", "")
+    }
+}
+
+function setPan(_0xDB20, _0xDACE) {
+    if (_0xDB20.channel.findParameter("pan") != undefined) {
+        return _0xDB20.channel.findParameter("pan").string = _0xDACE
+    }
+}
+
+function renameTracks(_0xDE7D, _0xDE54) {
+    let _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    let _0xDE02 = _0xDB49.getTrack(0).getRoot().createFunctions();
+    if (_0xDE02 == undefined) {
+        return
+    };
+    for (i = 0; i < _0xDB49.numTracks; i++) {
+        var _0xDB20 = _0xDB49.getTrack(i);
+        if (_0xDB20.name == null || _0xDB20.name == undefined) {
+            continue
+        };
+        var _0xDA01 = _0xDB20.name.toString();
+        var _0xDE2B = _0xDA01.replace(_0xDE7D, _0xDE54);
+        _0xDE02.renameEvent(_0xDB20, _0xDE2B.toString())
+    }
+}
+
+function setTrackColor(_0xDB20, _0xDA7C) {
+    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    var _0xDE02 = _0xDB49.getTrack(0).getRoot().createFunctions();
+    if (_0xDE02 == undefined) {
+        return
+    };
+    var _0xE017 = getColorVal(_0xDA7C.replace("#", ""));
+    _0xDE02.colorizeEvent(_0xDB20, _0xE017)
+}
+
+function getColorVal(_0xDA7C) {
+    let _0xDACE = parseInt(_0xDA7C, 16);
+    let _0xDAA5 = (_0xDACE >> 16) & 0xff;
+    let _0xDA53 = (_0xDACE >> 8) & 0xff;
+    let _0xDA2A = _0xDACE & 0xff;
+    return ((_0xDA2A << 16) | (_0xDA53 << 8) | _0xDAA5) | 0xff000000
+}
+
+function setProgram(_0xDF73, _0xDFC5) {
+    var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
+    if (_0xDB49.getSelectedTrack(0) == undefined || _0xDB49.getSelectedTrack(0).mediaType != "Music") {
+        return
+    };
+    var _0xDF9C = _0xDB49.getSelectedTrack(0).channel.name;
+    if (_0xDF9C == undefined) {
+        return
+    };
+    var _0xDFEE = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MusicTrackDevice" + "/Channels/MusicTrack/" + _0xDF9C + "/Programs");
+    try {
+        _0xDFEE.findParameter("programEnabled").setValue(1, true);
+        _0xDFEE.findParameter("bankNumber").setValue(_0xDF73, true);
+        _0xDFEE.findParameter("programNumber").setValue(_0xDFC5, true)
+    } catch (err) {
+        return
+    }
+}
+
+function getChannels(_0xD986) {
+    if (_0xD986 != 0 && _0xD986 != 1) {
+        _0xD986 = 0
+    };
+    var _0xD95D = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
+    var _0xD934 = [];
+    switch (_0xD986) {
+    case 0:
+        for (i = 0; i < _0xD95D.numChannels; i++) {
+            _0xD934.push(_0xD95D.getChannel(i))
+        };
+        return _0xD934;
+        break;
+    case 1:
+        for (i = 0; i < _0xD95D.numSelectedChannels; i++) {
+            _0xD934.push(_0xD95D.getSelectedChannel(i))
+        };
+        return _0xD934;
+        break
+    }
+}
+
+function getChannelsByName(_0xDA01, _0xD9AF) {
+    if (_0xDA01.trim() == 0) {
+        return
+    };
+    if (_0xD9AF != 0 && _0xD9AF != 1) {
+        (_0xD9AF = 0)
+    };
+    var _0xD890 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
+    var _0xD934 = [];
+    switch (_0xD9AF) {
+    case 0:
+        for (i = 0; i < _0xD890.numChannels; i++) {
+            var _0xD867 = _0xD890.getChannel(i);
+            var _0xD9D8 = _0xD867.label.trim();
+            if (_0xD9D8.toUpperCase().indexOf(_0xDA01.toUpperCase()) > -1) {
+                _0xD934.push(_0xD867)
+            }
+        };
+        return _0xD934;
+        break;
+    case 1:
+        for (i = 0; i < _0xD890.numChannels; i++) {
+            var _0xD867 = _0xD890.getChannel(i);
+            var _0xD9D8 = _0xD867.label.trim();
+            if (channlName.indexOf(_0xDA01) > -1) {
+                _0xD934.push(_0xD867)
+            }
+        };
+        return tracks;
+        break
+    }
+}
+
+function getFader(_0xD867) {
+    return _0xD867.findParameter("volume").string
+}
+
+function setFader(_0xD867, _0xDACE) {
+    newValue = (Math.pow(10, parseFloat(_0xDACE / 20)));
+    if (_0xD867.findParameter("volume") == undefined) {
+        return
+    };
+    _0xD867.findParameter("volume").setValue(newValue), true
+}
+
+function centerPans() {
+    var _0xD890 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
+    for (i = 0; i < _0xD890.numSelectedChannels; i++) {
+        var _0xD867 = _0xD890.getSelectedChannel(i);
+        if (_0xD867.pan != undefined) {
+            _0xD867.pan = 0.5
+        }
+    }
+}
+
+function resetInputs(_0xDECF) {
+    var _0xDEA6 = Host.Objects.getObjectByUrl("://studioapp/Application").findParameter("appNameAndVersion").value.replace("Studio One", "").trim().substring(0, 3);
+    if (_0xDEA6 < 4.5) {
+        Host.GUI.alert("This function requires Studio One 4.5 or greater.");
+        return
+    };
+    var _0xD890 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
+    var _0xDEF8 = [];
+    if (_0xD890.numSelectedChannels > 0) {
+        for (i = 0; i < _0xD890.numSelectedChannels; i++) {
+            _0xDEF8.push(_0xD890.getSelectedChannel(i))
+        };
+        for (i = 0; i < _0xD890.numSelectedChannels; i++) {
+            _0xD890.getSelectedChannel(i).findParameter("selected").setValue(0, true)
+        }
+    };
+    if (_0xDECF == 1) {
+        for (i = 0; i < _0xDEF8.length; i++) {
+            var _0xD867 = _0xDEF8[i];
+            if (_0xD867.find("InputFX") != undefined) {
+                _0xD867.find("InputFX").findParameter("gain").setValue(0, true)
+            }
+        }
+    } else {
+        for (i = 0; i < _0xD890.numChannels; i++) {
+            var _0xD867 = _0xD890.getChannel(i);
+            if (_0xD867.find("InputFX") != undefined) {
+                _0xD867.find("InputFX").findParameter("gain").setValue(0, true)
+            }
+        }
+    }
+}
+
+function setMasterFader(_0xDACE) {
+    var _0xDF4A = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/AudioMixer");
+    _0xDF4A.findParameter("masterVolume").string = _0xDACE.toString()
+}
+
+function setChannelColor(_0xD867, _0xDF21) {
+    if (_0xDF21.indexOf("#") == -1) {
+        _0xDF21 = "#" + _0xDF21
+    };
+    _0xD867.findParameter("color").string = _0xDF21
+}
+
+function loadCubasePatchFile(_0xDACE) {
+    var _0xDC3F = Host.Classes.createInstance("CCL:FileSelector");
+    var _0xDDD9 = {
+        description: ("Cubase Patch Script"),
+        extension: "txt",
+        mimetype: "text"
+    };
+    _0xDC3F.addFilter(_0xDDD9);
+    _0xDC3F.runOpen();
+    var _0xDD0C = _0xDC3F.getPath();
+    var _0xDD87 = [];
+    var _0xDDB0 = Host.IO.openTextFile(_0xDD0C);
+    if (_0xDDB0) {
+        var _0xDC68 = 0;
+        var _0xDBC4 = "";
+        while (!_0xDDB0.endOfStream) {
+            var _0xDC91 = _0xDDB0.readLine().toString();
+            if (_0xDC91.trim() == "" || _0xDC91 == null) {
+                continue
+            };
+            if (_0xDC91.indexOf("[script name]") > -1) {
+                _0xDC91 = _0xDC91.replace("\t", "").replace("[script name]", "");
+                _0xDD87[_0xDC68] = _0xDC91.trim();
+                _0xDC68++;
+                continue
+            };
+            if (_0xDC91.indexOf("[g") > -1) {
+                _0xDC91 = _0xDC91.replace("\t", "");
+                var _0xDC16 = _0xDC91.split("]");
+                _0xDBC4 = _0xDC16[1].trim();
+                continue
+            };
+            if (_0xDC91.indexOf("[p") > -1 && _0xDC91.indexOf(",") > -1) {
+                _0xDC91 = _0xDC91.replace("\t", "");
+                var _0xDC16 = _0xDC91.split("]");
+                var _0xDD5E = _0xDC16[1].trim();
+                var _0xDD35 = _0xDC16[0].split(",");
+                var _0xDCE3 = _0xDD35[2];
+                var _0xDCBA = _0xDD35[3];
+                var _0xDBED = (_0xDCE3 * 128) + _0xDCBA;
+                _0xDD87[_0xDC68] = (_0xDD5E + "," + _0xDD35[1] + "," + _0xDBED + "," + _0xDBC4);
+                _0xDC68++;
+                continue
+            }
+        };
+        _0xDDB0.close();
+        if (_0xDACE == 1) {
+            for (_0xDC68 = 0; _0xDC68 < _0xDD87.length; _0xDC68++) {
+                print(_0xDD87[_0xDC68])
+            }
+        };
+        return _0xDD87
+    }
+}
