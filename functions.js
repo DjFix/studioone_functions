@@ -325,9 +325,9 @@ function resetInputs(vSelected) {
 // setMasterFader (level [integer])
 // Sets the master bus fader to a specific dB value.
 // Example: setMasterFader( -10.5);
-function setMasterFader(vValue) {
+function setMasterFader(vLevel) {
     var _0xDF4A = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/AudioMixer");
-    _0xDF4A.findParameter("masterVolume").string = vValue.toString()
+    _0xDF4A.findParameter("masterVolume").string = vLevel.toString()
 }
 
 function setChannelColor(vChannel, _0xDF21) {
