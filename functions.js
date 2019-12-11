@@ -25,13 +25,13 @@ function getDateTime() {
     return ((vDate.getMonth() + 1) + "/" + vDate.getDate() + "/" + vDate.getFullYear() + " (" + vDate.getHours() + "_" + (vDate.getMinutes()) + "_" + vDate.getSeconds() + ")").toString()
 }
 
-function getAllPropertyNames(_0xD8B9) {
-    var _0xD8E2 = [];
+function getAllPropertyNames(vObject) {
+    var vPropertyNames = [];
     do {
-        _0xD8E2 = _0xD8E2.concat(Object.getOwnPropertyNames(_0xD8B9))
-    } while (_0xD8B9 = Object.getPrototypeOf(_0xD8B9));;
-    var _0xD90B = _0xD8E2.join("\r\n");
-    Host.GUI.alert(String(_0xD90B))
+        vPropertyNames = vPropertyNames.concat(Object.getOwnPropertyNames(vObject))
+    } while (vObject = Object.getPrototypeOf(vObject));;
+    var vPrintPropertyNames = vPropertyNames.join("\r\n");
+    Host.GUI.alert(String(vPrintPropertyNames))
 }
 
 /*   TRACKS   */
