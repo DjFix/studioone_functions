@@ -52,13 +52,13 @@ function soloTrack(vTrack) {
     }
 }
 
-function getTracks(_0xD986) {
-    if (_0xD986 != 0 && _0xD986 != 1) {
-        _0xD986 = 0
+function getTracks(vSelected) {
+    if (vSelected != 0 && vSelected != 1) {
+        vSelected = 0
     };
     var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
     var _0xDB72 = [];
-    switch (_0xD986) {
+    switch (vSelected) {
     case 0:
         for (i = 0; i < _0xDB49.numTracks; i++) {
             var vTrack = _0xDB49.getTrack(i);
@@ -179,13 +179,13 @@ function setProgram(_0xDF73, _0xDFC5) {
     }
 }
 
-function getChannels(_0xD986) {
-    if (_0xD986 != 0 && _0xD986 != 1) {
-        _0xD986 = 0
+function getChannels(vSelected) {
+    if (vSelected != 0 && vSelected != 1) {
+        vSelected = 0
     };
     var _0xD95D = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
     var _0xD934 = [];
-    switch (_0xD986) {
+    switch (vSelected) {
     case 0:
         for (i = 0; i < _0xD95D.numChannels; i++) {
             _0xD934.push(_0xD95D.getChannel(i))
