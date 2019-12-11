@@ -344,7 +344,7 @@ function setChannelColor(vChannel, vColor) {
 // Argument is optional. 1 = print array to console.
 // Array item 0 is the Instrument Name, all other array items are comma delimited as follows:
 // Program Name, program number, bank number, group name
-function loadCubasePatchFile(vValue) {
+function loadCubasePatchFile(vDebug) {
     var _0xDC3F = Host.Classes.createInstance("CCL:FileSelector");
     var _0xDDD9 = {
         description: ("Cubase Patch Script"),
@@ -390,7 +390,7 @@ function loadCubasePatchFile(vValue) {
             }
         };
         _0xDDB0.close();
-        if (vValue == 1) {
+        if (vDebug == 1) {
             for (_0xDC68 = 0; _0xDC68 < _0xDD87.length; _0xDC68++) {
                 print(_0xDD87[_0xDC68])
             }
