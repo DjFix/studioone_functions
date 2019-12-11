@@ -13,9 +13,11 @@ function print(vValue) {
     Host.Console.writeLine(vValue.toString())
 }
 
+// getDateTime ():
+// Returns month/day/year (hour_minute_seconds)
 function getDateTime() {
-    var _0xDAF7 = new Date(Date.now());
-    return ((_0xDAF7.getMonth() + 1) + "/" + _0xDAF7.getDate() + "/" + _0xDAF7.getFullYear() + " (" + _0xDAF7.getHours() + "_" + (_0xDAF7.getMinutes()) + "_" + _0xDAF7.getSeconds() + ")").toString()
+    var vDate = new Date(Date.now());
+    return ((vDate.getMonth() + 1) + "/" + vDate.getDate() + "/" + vDate.getFullYear() + " (" + vDate.getHours() + "_" + (vDate.getMinutes()) + "_" + vDate.getSeconds() + ")").toString()
 }
 
 function getAllPropertyNames(_0xD8B9) {
