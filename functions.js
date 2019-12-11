@@ -271,6 +271,8 @@ function setFader(vChannel, vLevel) {
     vChannel.findParameter("volume").setValue(newValue), true
 }
 
+// centerPans ()
+// Centers pans on all selected channel(s)
 function centerPans() {
     var _0xD890 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MixerConsole").getChannelList(1);
     for (i = 0; i < _0xD890.numSelectedChannels; i++) {
