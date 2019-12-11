@@ -389,11 +389,11 @@ function setProgram(vBank, vProgram) {
     if (vChannelName == undefined) {
         return
     };
-    var _0xDFEE = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MusicTrackDevice" + "/Channels/MusicTrack/" + vChannelName + "/Programs");
+    var vProgram = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/Environment/MusicTrackDevice" + "/Channels/MusicTrack/" + vChannelName + "/Programs");
     try {
-        _0xDFEE.findParameter("programEnabled").setValue(1, true);
-        _0xDFEE.findParameter("bankNumber").setValue(vBank, true);
-        _0xDFEE.findParameter("programNumber").setValue(vProgram, true)
+        vProgram.findParameter("programEnabled").setValue(1, true);
+        vProgram.findParameter("bankNumber").setValue(vBank, true);
+        vProgram.findParameter("programNumber").setValue(vProgram, true)
     } catch (err) {
         return
     }
