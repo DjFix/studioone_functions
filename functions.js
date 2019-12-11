@@ -29,6 +29,8 @@ function getAllPropertyNames(_0xD8B9) {
     Host.GUI.alert(String(_0xD90B))
 }
 
+// selectTrack (track [object])
+// Use this to optionally select tracks when iterating when necessary
 function selectTrack(vTrack) {
     var _0xDB49 = Host.Objects.getObjectByUrl("://hostapp/DocumentManager/ActiveDocument/TrackList").mainTrackList;
     _0xDB49.selectTrack(vTrack)
